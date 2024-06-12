@@ -90,7 +90,8 @@ $parallax_image = $upload_dir['baseurl'] . '/images/parallax.jpg';
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="#home" class="navbar-link hover-underline active">
+            <a href="<?php echo site_url(); ?>/" class="navbar-link hover-underline active">
+
               <div class="separator"></div>
 
               <span class="span">Home</span>
@@ -98,14 +99,14 @@ $parallax_image = $upload_dir['baseurl'] . '/images/parallax.jpg';
           </li>
 
           <li class="navbar-item">
-            <a href="#about" class="navbar-link hover-underline">
+            <a href="/about" class="navbar-link hover-underline">
               <div class="separator"></div>
 
               <span class="span">About Us</span>
             </a>
           </li>
           <li class="navbar-item">
-            <a href="#menu" class="navbar-link hover-underline">
+            <a href="/menu" class="navbar-link hover-underline">
               <div class="separator"></div>
 
               <span class="span">Products</span>
@@ -113,7 +114,7 @@ $parallax_image = $upload_dir['baseurl'] . '/images/parallax.jpg';
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link hover-underline">
+            <a href="/blog" class="navbar-link hover-underline">
               <div class="separator"></div>
 
               <span class="span">Our Blog</span>
@@ -121,7 +122,7 @@ $parallax_image = $upload_dir['baseurl'] . '/images/parallax.jpg';
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link hover-underline">
+            <a href="/contact" class="navbar-link hover-underline">
               <div class="separator"></div>
 
               <span class="span">Contact</span>
