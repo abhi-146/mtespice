@@ -145,11 +145,11 @@ get_header();
 
           <p class="section-subtitle label-2">Flavors For Royalty</p>
 
-          <h2 class="headline-1 section-title" style="color: black">We Offer Top Notch</h2>
+          <h2 class="headline-1 section-title" style="color: black">We Offer Premium Spices</h2>
 
           <p class="section-text" style="color: black">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys
-            standard dummy text ever.
+          Discover the rich, aromatic, and flavorful world of spices. Our spices are sourced from the finest farms and meticulously processed to bring you the best in quality and taste.
+
           </p>
 
           <ul class="grid-list">
