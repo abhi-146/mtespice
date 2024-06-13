@@ -99,14 +99,14 @@ $parallax_image = $upload_dir['baseurl'] . '/images/parallax.jpg';
           </li>
 
           <li class="navbar-item">
-            <a href="/about" class="navbar-link hover-underline">
+            <a href="<?php echo site_url(); ?>/about" class="navbar-link hover-underline">
               <div class="separator"></div>
 
               <span class="span">About Us</span>
             </a>
           </li>
           <li class="navbar-item">
-            <a href="/menu" class="navbar-link hover-underline">
+            <a href="<?php echo site_url(); ?>/products" class="navbar-link hover-underline">
               <div class="separator"></div>
 
               <span class="span">Products</span>
@@ -114,7 +114,7 @@ $parallax_image = $upload_dir['baseurl'] . '/images/parallax.jpg';
           </li>
 
           <li class="navbar-item">
-            <a href="/blog" class="navbar-link hover-underline">
+            <a href="<?php echo site_url(); ?>/all-blogs" class="navbar-link hover-underline">
               <div class="separator"></div>
 
               <span class="span">Our Blog</span>
@@ -122,7 +122,7 @@ $parallax_image = $upload_dir['baseurl'] . '/images/parallax.jpg';
           </li>
 
           <li class="navbar-item">
-            <a href="/contact" class="navbar-link hover-underline">
+            <a href="<?php echo site_url(); ?>/contact" class="navbar-link hover-underline">
               <div class="separator"></div>
 
               <span class="span">Contact</span>

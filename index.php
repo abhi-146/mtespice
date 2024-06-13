@@ -5,6 +5,8 @@ $upload_dir = wp_upload_dir();
 // Generate the full URL to the image
 $image_url = $upload_dir['baseurl'] . '/images/badge-1.png';
 $hr_slider_1 = $upload_dir['baseurl'] . '/images/hr-slider-1.jpg';
+$hr_slider_2 = $upload_dir['baseurl'] . '/images/hr-slider-2.jpg';
+$hr_slider_3 = $upload_dir['baseurl'] . '/images/hr-slider-2.jpg';
 $img_pattern = $upload_dir['baseurl'] . '/images/img-pattern.svg';
 $badge2bg = $upload_dir['baseurl'] . '/images/img-pattern.svg';
 get_header(); 
@@ -80,10 +82,10 @@ get_header();
           
           <!-- just comment them out for slider effect -->
 
-          <!-- <li class="slider-item" data-hero-slider-item>
+          <li class="slider-item" data-hero-slider-item>
 
             <div class="slider-bg">
-              <img src="./assets/images/hr-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+              <img src="<?php echo esc_url($hr_slider_2); ?>" width="1880" height="950" alt="" class="img-cover">
             </div>
 
             <p class="label-2 section-subtitle slider-reveal">Unlocking Global Spice Treasures</p>
@@ -105,7 +107,7 @@ get_header();
           <li class="slider-item" data-hero-slider-item>
 
             <div class="slider-bg">
-              <img src="./assets/images/hr-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+              <img src="<?php echo esc_url($hr_slider_3); ?>" width="1880" height="950" alt="" class="img-cover">
             </div>
 
             <p class="label-2 section-subtitle slider-reveal">Unlocking Global Spice Treasures</p>
@@ -121,7 +123,7 @@ get_header();
               <span class="text text-2" aria-hidden="true">Explore Now</span>
             </a>
 
-          </li> -->
+          </li>
 
         </ul>
 
@@ -274,15 +276,13 @@ get_header();
 
             <p class="label-2 section-subtitle" id="about-label">Our Story</p>
 
-            <h2 class="headline-1 section-title">Every Flavor Tells a Story</h2>
+            <h2 class="headline-1 section-title">Leading the Spice Export Industry</h2>
 
             <p class="section-text">
-              Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
-              industrys standard dummy text ever since the when an unknown printer took a galley of type and scrambled
-              it to make a type specimen book It has survived not only five centuries, but also the leap into.
+            MTE EXIM PRIVATE LIMITED, established in 2005, has rapidly grown to become a leading exporter of spices in India. With a commitment to quality and excellence, the company has achieved remarkable success, boasting a turnover of $50 million. Renowned for its premium spices, MTE EXIM PRIVATE LIMITED continues to set the benchmark in the industry, delivering the rich flavors of India to markets worldwide.
             </p>
 
-            <a href="#" class="btn btn-primary">
+            <a href="/about-us" class="btn btn-primary">
               <span class="text text-1">Read More</span>
 
               <span class="text text-2" aria-hidden="true">Read More</span>
@@ -301,7 +301,7 @@ get_header();
 
           </figure>
 
-          <img src="<?php echo $upload_dir['baseurl'] . '/images/shape-3.jpg'?>" width="197" height="194" loading="lazy" alt="" class="shape">
+          <!-- <img src="<?php //echo $upload_dir['baseurl'] . '/images/shape-3.jpg'?>" width="197" height="194" loading="lazy" alt="" class="shape"> -->
 
         </div>
       </section>
@@ -424,80 +424,79 @@ get_header();
       -->
 
       <section class="section features text-center" aria-label="features">
-        <div class="container">
+  <div class="container">
 
-          <p class="section-subtitle label-2">Why Choose Us</p>
+    <p class="section-subtitle label-2">Why Choose Us</p>
 
-          <h2 class="headline-1 section-title">Our Strength</h2>
+    <h2 class="headline-1 section-title">Our Strength</h2>
 
-          <ul class="grid-list">
+    <ul class="grid-list">
 
-            <li class="feature-item">
-              <div class="feature-card">
+      <li class="feature-item">
+        <div class="feature-card">
 
-                <div class="card-icon">
-                  <img src="<?php echo $upload_dir['baseurl'] . '/images/spices.png'?>" width="100" height="80" loading="lazy" alt="icon">
-                </div>
+          <div class="card-icon">
+            <img src="<?php echo $upload_dir['baseurl'] . '/images/spices.png'?>" width="100" height="80" loading="lazy" alt="Premium Quality Spices Icon">
+          </div>
 
-                <h3 class="title-2 card-title">Premium Quality Spices</h3>
+          <h3 class="title-2 card-title">Premium Quality Spices</h3>
 
-                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
-
-              </div>
-            </li>
-
-            <li class="feature-item">
-              <div class="feature-card">
-
-                <div class="card-icon">
-                  <img src="<?php echo $upload_dir['baseurl'] . '/images/organic.png'?>" width="100" height="80" loading="lazy" alt="icon">
-                </div>
-
-                <h3 class="title-2 card-title">Organic and Sustainable</h3>
-
-                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
-
-              </div>
-            </li>
-
-            <li class="feature-item">
-              <div class="feature-card">
-
-                <div class="card-icon">
-                  <img src="<?php echo $upload_dir['baseurl'] . '/images/think-outside-the-box.png'?>" width="100" height="80" loading="lazy" alt="icon">
-                </div>
-
-                <h3 class="title-2 card-title">Unique Blends</h3>
-
-                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
-
-              </div>
-            </li>
-
-            <li class="feature-item">
-              <div class="feature-card">
-
-                <div class="card-icon">
-                  <img src="<?php echo $upload_dir['baseurl'] . '/images/support.png'?>" width="100" height="80" loading="lazy" alt="icon">
-                </div>
-
-                <h3 class="title-2 card-title">Customer Support</h3>
-
-                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <img src="<?php echo $upload_dir['baseurl'] . '/images/shape-7.png'?>" width="208" height="178" loading="lazy" alt="shape"
-            class="shape shape-1">
-
-          <img src="<?php echo $upload_dir['baseurl'] . '/images/shape-8.png'?>" width="120" height="115" loading="lazy" alt="shape"
-            class="shape shape-2">
+          <p class="label-1 card-text">We source the finest spices from around the world to ensure the highest quality and freshness.</p>
 
         </div>
-      </section>
+      </li>
+
+      <li class="feature-item">
+        <div class="feature-card">
+
+          <div class="card-icon">
+            <img src="<?php echo $upload_dir['baseurl'] . '/images/organic.png'?>" width="100" height="80" loading="lazy" alt="Organic and Sustainable Icon">
+          </div>
+
+          <h3 class="title-2 card-title">Organic and Sustainable</h3>
+
+          <p class="label-1 card-text">Our products are certified organic and sustainably sourced, supporting eco-friendly practices.</p>
+
+        </div>
+      </li>
+
+      <li class="feature-item">
+        <div class="feature-card">
+
+          <div class="card-icon">
+            <img src="<?php echo $upload_dir['baseurl'] . '/images/think-outside-the-box.png'?>" width="100" height="80" loading="lazy" alt="Unique Blends Icon">
+          </div>
+
+          <h3 class="title-2 card-title">Unique Blends</h3>
+
+          <p class="label-1 card-text">We offer a variety of unique spice blends that add a special touch to your culinary creations.</p>
+
+        </div>
+      </li>
+
+      <li class="feature-item">
+        <div class="feature-card">
+
+          <div class="card-icon">
+            <img src="<?php echo $upload_dir['baseurl'] . '/images/support.png'?>" width="100" height="80" loading="lazy" alt="Customer Support Icon">
+          </div>
+
+          <h3 class="title-2 card-title">Customer Support</h3>
+
+          <p class="label-1 card-text">Our dedicated support team is here to help you with any inquiries or issues you may have.</p>
+
+        </div>
+      </li>
+
+    </ul>
+
+    <img src="<?php echo $upload_dir['baseurl'] . '/images/shape-7.png'?>" width="208" height="178" loading="lazy" alt="Decorative Shape" class="shape shape-1">
+
+    <img src="<?php echo $upload_dir['baseurl'] . '/images/shape-8.png'?>" width="120" height="115" loading="lazy" alt="Decorative Shape" class="shape shape-2">
+
+  </div>
+</section>
+
 
       <!-- 
         - #BLOG
@@ -506,97 +505,42 @@ get_header();
       <section class="section event bg-black-10" aria-label="event">
         <div class="container">
 
-          <p class="section-subtitle label-2 text-center">Recent Updates</p>
+          <h2 class="section-title headline-1 text-center">Recent blogs</h2>
 
-          <h2 class="section-title headline-1 text-center">Upcoming Event</h2>
+          <?php
 
-          <ul class="grid-list">
+// Fetch all posts of type 'blog'
+$args = array(
+    'post_type' => 'blogs',
+    'posts_per_page' => -1
+);
+$blog_posts = new WP_Query($args);
 
+if ($blog_posts->have_posts()) : ?>
+    <ul class="grid-list">
+        <?php while ($blog_posts->have_posts()) : $blog_posts->the_post(); 
+            $post_id = get_the_ID();
+            $post_title = get_the_title();
+            $post_date = get_the_date('Y-m-d');
+            $post_permalink = get_permalink();
+            $post_image = get_the_post_thumbnail_url($post_id, 'full');
+        ?>
             <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="<?php echo $upload_dir['baseurl'] . '/images/event-3.jpg'?>" width="350" height="450" loading="lazy"
-                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2022-09-15">09/06/2024</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Food, Flavour</p>
-
-                  <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
-                  </h3>
-                </div>
-
-              </div>
+                <a href="<?php echo $post_permalink; ?>?post_id=<?php echo $post_id; ?>" class="event-card has-before hover:shine">
+                    <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                        <img src="<?php echo $post_image; ?>" width="350" height="450" loading="lazy" alt="<?php echo esc_attr($post_title); ?>" class="img-cover">
+                        <time class="publish-date label-2" datetime="<?php echo $post_date; ?>"><?php echo date('m/d/Y', strtotime($post_date)); ?></time>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-subtitle label-2 text-center"><?php echo esc_html($post_subtitle); ?></p>
+                        <h3 class="card-title title-2 text-center"><?php echo esc_html($post_title); ?></h3>
+                    </div>
+                </a>
             </li>
+        <?php endwhile; ?>
+    </ul>
+<?php endif; wp_reset_postdata(); ?>
 
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="<?php echo $upload_dir['baseurl'] . '/images/event-3.jpg'?>" width="350" height="450" loading="lazy"
-                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2022-09-15">09/06/2024</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Food, Flavour</p>
-
-                  <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="<?php echo $upload_dir['baseurl'] . '/images/event-3.jpg'?>" width="350" height="450" loading="lazy"
-                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2022-09-08">09/06/2024</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Healthy Food</p>
-
-                  <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="<?php echo $upload_dir['baseurl'] . '/images/event-3.jpg'?>" width="350" height="450" loading="lazy"
-                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2022-09-03">09/06/2024</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Recipie</p>
-
-                  <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
 
           <a href="#" class="btn btn-primary">
             <span class="text text-1">View Our Blog</span>

@@ -173,13 +173,15 @@ document.addEventListener("DOMContentLoaded", function() {
   
   // Testimonial Slider & AutoSlider
   
-  document.addEventListener("DOMContentLoaded", function() {
+
     let currentSlide = 0;
     const slides = document.querySelectorAll('.testimonial .slide');
+  
     const totalSlides = slides.length;
+    console.log(totalSlides)
     const nextButton = document.querySelector('.navigation .next');
     const prevButton = document.querySelector('.navigation .prev');
-    let autoSlideInterval;
+    let autoSlideIntervalT;
   
     function nextSlide() {
       currentSlide = (currentSlide + 1) % totalSlides;
@@ -199,11 +201,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   
     function startAutoSlide() {
-      autoSlideInterval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
+      autoSlideIntervalT = setInterval(nextSlide, 3000); // Change slide every 3 seconds
     }
   
     function stopAutoSlide() {
-      clearInterval(autoSlideInterval);
+      clearInterval(autoSlideIntervalT);
     }
   
     // Event listeners for navigation buttons
@@ -237,6 +239,6 @@ document.addEventListener("DOMContentLoaded", function() {
     if (window.innerWidth <= 768) {
       startAutoSlide();
     }
-  });
+
 
 });

@@ -32,7 +32,7 @@ $footer_pattern_image = $upload_dir['baseurl'] . '/images/footer-form-pattern.sv
 
       <div class="footer-top grid-list">
 
-        <div class="footer-brand has-before has-after" style="background: var(--smoky-black-1) <?php echo $upload_dir['baseurl'] . '/images/footer-form-bg.png'?>');">>
+        <div class="footer-brand has-before has-after" style="background: var(--smoky-black-1) <?php echo $upload_dir['baseurl'] . '/images/footer-form-bg.png'?>');">
 
           <a href="#" class="logo">
             <img src="<?php echo $upload_dir['baseurl'] . '/images/spicy_logo.png'?>" width="160" height="50" loading="lazy" alt="grilli home">

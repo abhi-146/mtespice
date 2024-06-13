@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Spices
+Template Name: Products
 */
  
 $upload_dir = wp_upload_dir(); 
@@ -8,7 +8,7 @@ $upload_dir = wp_upload_dir();
 get_header(); ?>
 
 <style>
-    /*-----------------------------------*\
+/*-----------------------------------*\
   #index.css
 \*-----------------------------------*/
 
@@ -54,10 +54,79 @@ get_header(); ?>
 --loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%, transparent 66.66% 75%);
 --gradient-1: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), hsla(0, 0%, 0%, 0.7), transparent);
 
+/**
+ * TYPOGRAPHY
+ */
 
+/* font-family */
+--fontFamily-forum: 'Forum', cursive;
+--fontFamily-dm_sans: 'DM Sans', sans-serif;
 
+/* font-size */
+--fontSize-display-1: calc(1.3rem + 6.7vw);
+--fontSize-headline-1: calc(2rem + 2.5vw);
+--fontSize-headline-2: calc(1.3rem + 2.4vw);
+--fontSize-title-1: calc(1.6rem + 1.2vw);
+--fontSize-title-2: 2.2rem;
+--fontSize-title-3: 2.1rem;
+--fontSize-title-4: calc(1.6rem + 1.2vw);
+--fontSize-body-1: 2.4rem;
+--fontSize-body-2: 1.6rem;
+--fontSize-body-3: 1.8rem;
+--fontSize-body-4: 1.6rem;
+--fontSize-label-1: 1.4rem;
+--fontSize-label-2: 1.4rem;
+
+/* font-weight */
+--weight-regular: 400;
+--weight-bold: 700;
+
+/* line-height */
+--lineHeight-1: 1em;
+--lineHeight-2: 1.2em;
+--lineHeight-3: 1.5em;
+--lineHeight-4: 1.6em;
+--lineHeight-5: 1.85em;
+--lineHeight-6: 1.4em;
+
+/* letter-spacing */
+--letterSpacing-1: 0.15em;
+--letterSpacing-2: 0.4em;
+--letterSpacing-3: 0.2em;
+--letterSpacing-4: 0.3em;
+--letterSpacing-5: 3px;
+
+/**
+ * SPACING
+ */
+
+--section-space: 70px;
+
+/**
+ * SHADOW
+ */
+
+--shadow-1: 0px 0px 25px 0px hsla(0, 0%, 0%, 0.25);
+
+/**
+ * BORDER RADIUS
+ */
+
+--radius-24: 24px;
+--radius-circle: 50%;
+
+/**
+ * TRANSITION
+ */
+
+--transition-1: 250ms ease;
+--transition-2: 500ms ease;
+--transition-3: 1000ms ease;
 
 }
+
+
+
 
 
 /*-----------------------------------*\
@@ -2104,7 +2173,7 @@ visibility: visible;
                         <p class="label-2 section-subtitle slider-reveal">Unlocking Global Spice Treasures</p>
 
                         <h1 class="display-1 hero-title slider-reveal">
-                            SPICES <br>
+                            Our Products <br>
 
                         </h1>
 
@@ -2136,285 +2205,51 @@ visibility: visible;
                         spices have various medicinal properties and hence used in the preparation of medicines from
                         ancient times. They are also used as as in ingredient in cosmetics and perfumes.</p>
 
-                    <ul class="grid-list">
+                        <ul class="grid-list">
+  
+    <li>
+        <a href="<?php echo esc_url(get_site_url() . '/spices'); ?>" class="event-card has-before hover:shine">
+            <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                <img src="<?php echo $upload_dir['baseurl'] . '/product_images/spices-collage.png'?>" width="350" height="450" loading="lazy" alt="<?php the_title_attribute(); ?>" class="img-cover">
+            </div>
+            <div class="card-content">
 
-                        <li>
-                            <div class="event-card has-before hover:shine">
+                <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                    <?php echo esc_html('Spices'); ?>
+                </h3>
+            </div>
+        </a>
+    </li>
 
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="<?php echo $upload_dir['baseurl'] . '/product_images/chillies.jpg'?>" width="350" height="450"
-                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
-                                        class="img-cover">
-                                </div>
 
-                                <div class="card-content">
-                                    <div class="card-icon">
-                                        <img src="<?php echo $upload_dir['baseurl'] . '/product_images/chilli-pepper.png'?>" width="100" height="80"
-                                            loading="lazy" alt="icon">
-                                    </div>
+    <li>
+        <a href="<?php echo esc_url(get_site_url() . '/pulses'); ?>" class="event-card has-before hover:shine">
+            <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                <img src="<?php echo $upload_dir['baseurl'] . '/product_images/spices-collage.png'?>" width="350" height="450" loading="lazy" alt="<?php the_title_attribute(); ?>" class="img-cover">
+            </div>
+            <div class="card-content">
 
-                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
-                                        Dry Chillies
-                                    </h3>
-                                </div>
+                <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                    <?php echo esc_html('Pulses'); ?>
+                </h3>
+            </div>
+        </a>
+    </li>
 
-                            </div>
-                        </li>
+    <li>
+        <a href="<?php echo esc_url(get_site_url() . '/nuts'); ?>" class="event-card has-before hover:shine">
+            <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                <img src="<?php echo $upload_dir['baseurl'] . '/product_images/spices-collage.png'?>" width="350" height="450" loading="lazy" alt="<?php the_title_attribute(); ?>" class="img-cover">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                    <?php echo esc_html('Nuts'); ?>
+                </h3>
+            </div>
+        </a>
+    </li>
+</ul>
 
-                        <li>
-                            <div class="event-card has-before hover:shine">
-
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="<?php echo $upload_dir['baseurl'] . '/product_images/cumin seed.jpg'?>" width="350" height="450"
-                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
-                                        class="img-cover">
-                                </div>
-
-                                <div class="card-content">
-                                    <div class="card-icon">
-                                        <img src="<?php echo $upload_dir['baseurl'] . '/product_images/cumin seed.png'?>" width="100" height="80"
-                                            loading="lazy" alt="icon">
-                                    </div>
-
-                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
-                                        Cumin Seeds
-                                    </h3>
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="event-card has-before hover:shine">
-
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="<?php echo $upload_dir['baseurl'] . '/product_images/fennel.jpg'?>" width="350" height="450"
-                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
-                                        class="img-cover">
-                                </div>
-
-                                <div class="card-content">
-                                    <div class="card-icon">
-                                        <img src="<?php echo $upload_dir['baseurl'] . '/product_images/fennel.png'?>" width="100" height="80"
-                                            loading="lazy" alt="icon">
-                                    </div>
-
-                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
-                                        Fennel Seeds
-                                    </h3>
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="event-card has-before hover:shine">
-
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="<?php echo $upload_dir['baseurl'] . '/product_images/turmeric.jpg'?>" width="350" height="450"
-                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
-                                        class="img-cover">
-                                </div>
-
-                                <div class="card-content">
-                                    <div class="card-icon">
-                                        <img src="<?php echo $upload_dir['baseurl'] . '/product_images/turmeric.png'?>" width="100" height="80"
-                                            loading="lazy" alt="icon">
-                                    </div>
-
-                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
-                                        Turmeric
-                                    </h3>
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="event-card has-before hover:shine">
-
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="<?php echo $upload_dir['baseurl'] . '/product_images/ajwain.jpg'?>" width="350" height="450"
-                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
-                                        class="img-cover">
-                                </div>
-
-                                <div class="card-content">
-                                    <div class="card-icon">
-                                        <img src="<?php echo $upload_dir['baseurl'] . '/product_images/ajwain.png'?>" width="100" height="80"
-                                            loading="lazy" alt="icon">
-                                    </div>
-
-                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
-                                        Ajwain
-                                    </h3>
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="event-card has-before hover:shine">
-
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="<?php echo $upload_dir['baseurl'] . '/product_images/fenugreek.jpg'?>" width="350" height="450"
-                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
-                                        class="img-cover">
-                                </div>
-
-                                <div class="card-content">
-                                    <div class="card-icon">
-                                        <img src="<?php echo $upload_dir['baseurl'] . '/product_images/fenugreek.png'?>" width="100" height="80"
-                                            loading="lazy" alt="icon">
-                                    </div>
-
-                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
-                                        Fenugreek
-                                    </h3>
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="event-card has-before hover:shine">
-
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="<?php echo $upload_dir['baseurl'] . '/product_images/dill_seed.jpg'?>" width="350" height="450"
-                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
-                                        class="img-cover">
-                                </div>
-
-                                <div class="card-content">
-                                    <div class="card-icon">
-                                        <img src="<?php echo $upload_dir['baseurl'] . '/product_images/dill_seed.png'?>" width="100" height="80"
-                                            loading="lazy" alt="icon">
-                                    </div>
-
-                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
-                                        Dill Seeds
-                                    </h3>
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="event-card has-before hover:shine">
-
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="<?php echo $upload_dir['baseurl'] . '/product_images/cardamom.jpg'?>" width="350" height="450"
-                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
-                                        class="img-cover">
-                                </div>
-
-                                <div class="card-content">
-                                    <div class="card-icon">
-                                        <img src="<?php echo $upload_dir['baseurl'] . '/product_images/cardamom.png'?>" width="100" height="80"
-                                            loading="lazy" alt="icon">
-                                    </div>
-
-                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
-                                        Cardamom
-                                    </h3>
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="event-card has-before hover:shine">
-
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="<?php echo $upload_dir['baseurl'] . '/product_images/garlic.jpg'?>" width="350" height="450"
-                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
-                                        class="img-cover">
-                                </div>
-
-                                <div class="card-content">
-                                    <div class="card-icon">
-                                        <img src="<?php echo $upload_dir['baseurl'] . '/product_images/garlic.png'?>" width="100" height="80"
-                                            loading="lazy" alt="icon">
-                                    </div>
-
-                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
-                                        Garlic
-                                    </h3>
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="event-card has-before hover:shine">
-
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="<?php echo $upload_dir['baseurl'] . '/product_images/nutmeg.jpg'?>" width="350" height="450"
-                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
-                                        class="img-cover">
-                                </div>
-
-                                <div class="card-content">
-                                    <div class="card-icon">
-                                        <img src="<?php echo $upload_dir['baseurl'] . '/product_images/nutmeg.png'?>" width="100" height="80"
-                                            loading="lazy" alt="icon">
-                                    </div>
-
-                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
-                                        Nutmeg
-                                    </h3>
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="event-card has-before hover:shine">
-
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="<?php echo $upload_dir['baseurl'] . '/product_images/black-pepper.jpg'?>" width="350" height="450"
-                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
-                                        class="img-cover">
-                                </div>
-
-                                <div class="card-content">
-                                    <div class="card-icon">
-                                        <img src="<?php echo $upload_dir['baseurl'] . '/product_images/black-pepper.png'?>" width="100" height="80"
-                                            loading="lazy" alt="icon">
-                                    </div>
-
-                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
-                                        Black Pepper
-                                    </h3>
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="event-card has-before hover:shine">
-
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="<?php echo $upload_dir['baseurl'] . '/product_images/cinnamon.jpg'?>" width="350" height="450"
-                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
-                                        class="img-cover">
-                                </div>
-
-                                <div class="card-content">
-                                    <div class="card-icon">
-                                        <img src="<?php echo $upload_dir['baseurl'] . '/product_images/cinnamon.png'?>" width="100" height="80"
-                                            loading="lazy" alt="icon">
-                                    </div>
-
-                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
-                                        Cinnamon
-                                    </h3>
-                                </div>
-
-                            </div>
-                        </li>
-
-                    </ul>
 
 
                     <img src="<?php echo $upload_dir['baseurl'] . '/product_images/shape-1.png'?>" width="246" height="412" loading="lazy" alt="shape"

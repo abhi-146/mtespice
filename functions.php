@@ -26,7 +26,7 @@ add_action( 'wp_enqueue_scripts', 'mtespice_scripts' );
 
 
 // Register post types
-function register_pulses_post_type() {
+function register_custom_post_type() {
     $labels = array(
         'name'                  => _x('Pulses', 'Post type general name', 'mtespice'),
         'singular_name'         => _x('Pulse', 'Post type singular name', 'mtespice'),
@@ -60,8 +60,43 @@ function register_pulses_post_type() {
     );
 
     register_post_type('pulses', $args);
+
+
+    $labels = array(
+        'name'                  => _x('Blogs', 'Post type general name', 'mtespice'),
+        'singular_name'         => _x('Blog', 'Post type singular name', 'mtespice'),
+        'menu_name'             => _x('Blogs', 'Admin Menu text', 'mtespice'),
+        'name_admin_bar'        => _x('Blog', 'Add New on Toolbar', 'mtespice'),
+        'add_new'               => __('Add New', 'mtespice'),
+        'add_new_item'          => __('Add New Blog', 'mtespice'),
+        'new_item'              => __('New Blog', 'mtespice'),
+        'edit_item'             => __('Edit Blog', 'mtespice'),
+        'view_item'             => __('View Blog', 'mtespice'),
+        'all_items'             => __('All Blogs', 'mtespice'),
+        'search_items'          => __('Search Blogs', 'mtespice'),
+        'not_found'             => __('No blogs found.', 'mtespice'),
+        'not_found_in_trash'    => __('No blogs found in Trash.', 'mtespice'),
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array('slug' => 'blogs'),
+        'capability_type'    => 'post',
+        // 'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'supports'           => array('title', 'editor','author', 'thumbnail', 'excerpt', 'comments'),
+        'show_in_rest'       => true,
+    );
+
+    register_post_type('blogs', $args);
 }
 
-add_action('init', 'register_pulses_post_type');
+add_action('init', 'register_custom_post_type');
 
 ?>
