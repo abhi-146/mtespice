@@ -38,7 +38,7 @@ $parallax_image = $upload_dir['baseurl'] . '/images/parallax.jpg';
   <style>
     .parallax {
       background-image: url('<?php echo $parallax_image; ?>');
-      height: 800px;
+      height: 400px;
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
