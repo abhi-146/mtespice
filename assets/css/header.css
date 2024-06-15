@@ -840,6 +840,11 @@
     .details .name{
       font-size: 20px;
     }
+
+    .special-dish-banner img{
+      width: 500px;
+      height: 500px;
+    }
   
     
   }

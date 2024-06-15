@@ -28,7 +28,7 @@ get_header(); ?>
      * COLORS
      */
 
-    --gold-crayola: hsl(115, 71%, 38%);
+    --gold-crayola: rgb(72, 200, 160);
     --quick-silver: hsla(0, 0%, 65%, 1);
     --davys-grey: hsla(30, 3%, 34%, 1);
     --smoky-black-1: hsla(40, 12%, 5%, 1);
@@ -98,7 +98,7 @@ get_header(); ?>
      * SPACING
      */
 
-    --section-space: 70px;
+    --section-space: 30px;
 
     /**
      * SHADOW
@@ -942,7 +942,7 @@ body.nav-active {
 
 
 .parallax {
-    background-image: url('/assets/images/Parallax-About\ us.png');
+    background: linear-gradient(109.6deg, rgb(72, 200, 160) 11.2%, rgb(32, 40, 48) 91.3%);
     height: 400px;
     background-attachment: fixed;
     background-position: center;
@@ -1044,7 +1044,7 @@ body.nav-active {
   }
 
 .vision-parallax{
-    background-image: url('/assets/images/vision_mission.png');
+    background: linear-gradient(109.6deg, rgb(72, 200, 160) 11.2%, rgb(32, 40, 48) 91.3%);
     height: 400px;
     background-attachment: fixed;
     background-position: center;
@@ -1283,7 +1283,7 @@ body.nav-active {
     }
 
     .vision-parallax{
-    background-image: url(/assets/images/vision_mission.png);
+    background: linear-gradient(109.6deg, rgb(72, 200, 160) 11.2%, rgb(32, 40, 48) 91.3%);
     min-height: 150vh;
     background-attachment: fixed;
     background-position: center;
@@ -1553,7 +1553,7 @@ body.nav-active {
 
     
 .vision-parallax{
-    background-image: url('/assets/images/vision_mission.png');
+    background: linear-gradient(109.6deg, rgb(72, 200, 160) 11.2%, rgb(32, 40, 48) 91.3%);
     height: 400px;
     background-attachment: fixed;
     background-position: center;
@@ -1625,15 +1625,7 @@ body.nav-active {
      * CUSTOM PROPERTY
      */
 
-    :root {
-
-        /**
-       * spacing
-       */
-
-        --section-space: 100px;
-
-    }
+    
 
 
 
