@@ -61,6 +61,40 @@ function register_custom_post_type() {
 
     register_post_type('pulses', $args);
 
+    $labels = array(
+        'name'                  => _x('Oilseeds', 'Post type general name', 'mtespice'),
+        'singular_name'         => _x('Oilseed', 'Post type singular name', 'mtespice'),
+        'menu_name'             => _x('Oilseeds', 'Admin Menu text', 'mtespice'),
+        'name_admin_bar'        => _x('Oilseed', 'Add New on Toolbar', 'mtespice'),
+        'add_new'               => __('Add New', 'mtespice'),
+        'add_new_item'          => __('Add New Oilseed', 'mtespice'),
+        'new_item'              => __('New Oilseed', 'mtespice'),
+        'edit_item'             => __('Edit Oilseed', 'mtespice'),
+        'view_item'             => __('View Oilseed', 'mtespice'),
+        'all_items'             => __('All Oilseeds', 'mtespice'),
+        'search_items'          => __('Search Oilseeds', 'mtespice'),
+        'not_found'             => __('No Oilseeds found.', 'mtespice'),
+        'not_found_in_trash'    => __('No Oilseeds found in Trash.', 'mtespice'),
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array('slug' => 'oilseeds'),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'supports'           => array('title', 'author', 'thumbnail', 'excerpt', 'comments'),
+        'show_in_rest'       => true,
+    );
+
+    register_post_type('oilseeds', $args);
+
 
     $labels = array(
         'name'                  => _x('Blogs', 'Post type general name', 'mtespice'),

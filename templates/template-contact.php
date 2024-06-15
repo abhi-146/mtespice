@@ -8,54 +8,72 @@ get_header(); ?>
 
 <style>
 
-.container {
+/* single-blog.css */
+
+.contact-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    padding: 0 20px;
 }
 
 .left-column, .right-column {
-    width: 48%;
+    width: 100%;
+    max-width: 48%;
+    box-sizing: border-box;
+}
+
+.left-column {
+    margin-bottom: 20px;
 }
 
 .map-container {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    padding: 0 20px;
 }
 
 .branches {
     padding: 20px;
     background-color: #f9f9f9;
     border-top: 1px solid #ddd;
-    margin-top: 20px;
+    margin-top: 40px;
+    padding: 0 20px;
 }
 
 .branches h3 {
     margin-top: 0;
-    font-size: 1.5em;
-    color: #333;
+    font-size: 1.8em;
+    color: #4d2c91;
 }
 
 .branches p {
     font-weight: bold;
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: black;
 }
 
 .branches ul {
     list-style: none;
     padding: 0;
     margin-top: 10px;
+    line-height: 1.8;
 }
 
 .branches ul li {
     margin-bottom: 5px;
-    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    color: black;
 }
 
 .branches img {
     width: 20px;
     vertical-align: middle;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .right-column form {
@@ -65,11 +83,14 @@ get_header(); ?>
     padding: 20px;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .right-column form label {
     display: block;
     margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
 }
 
 .right-column form input,
@@ -79,6 +100,7 @@ get_header(); ?>
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .right-column form button {
@@ -89,6 +111,7 @@ get_header(); ?>
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .right-column form button:hover {
@@ -100,6 +123,7 @@ get_header(); ?>
     padding: 10px;
     margin-top: 10px;
     border-radius: 4px;
+    font-size: 1.2em;
 }
 
 .right-column .success-message {
@@ -113,6 +137,63 @@ get_header(); ?>
     border-color: #f5c6cb;
     color: #721c24;
 }
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero .hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.right-column h2 {
+    text-align: center;
+    padding: 15px;
+}
+
+/*
+Form css
+*/
+.wpcf7-form {
+    line-height: 2rem;
+}
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .left-column, .right-column {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .branches {
+        padding: 10px 20px;
+    }
+
+    .branches h3 {
+        font-size: 1.5em;
+    }
+
+    .branches p {
+        font-size: 1em;
+    }
+}
+
 </style>
 
 <main>
@@ -130,7 +211,7 @@ get_header(); ?>
         </ul>
     </section>
 
-    <div class="container">
+    <div class="contact-container">
         <div class="left-column">
             <h2>Corporate Head Office</h2>
             <p>

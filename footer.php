@@ -39,36 +39,21 @@ $footer_pattern_image = $upload_dir['baseurl'] . '/images/footer-form-pattern.sv
           </a>
 
           <address class="body-4">
-            Lorem Lipsum XYZ, USA
+          <p>
+                MTE Exim Pvt Ltd<br>
+                19, Armenian Street, 4th Floor, Suite No 513,<br>
+                Kolkata – 700001, India<br>
+                Mobile : +91 97487 25155 
+            </p>
           </address>
 
-          <a href="mailto:booking@grilli.com" class="body-4 contact-link">xyz@gmail.com</a>
+          <a href="mailto:info@mtespice.com" class="body-4 contact-link">info@mtespice.com</a>
 
           <div class="wrapper">
             <div class="separator"></div>
             <div class="separator"></div>
             <div class="separator"></div>
           </div>
-
-          <p class="title-1">Get News & Offers</p>
-
-          <p class="label-1">
-            Subscribe us & Get <span class="span">25% Off.</span>
-          </p>
-
-          <form action="" class="input-wrapper">
-            <div class="icon-wrapper">
-              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-
-              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
-            </div>
-
-            <button type="submit" class="btn btn-secondary">
-              <span class="text text-1">Subscribe</span>
-
-              <span class="text text-2" aria-hidden="true">Subscribe</span>
-            </button>
-          </form>
 
         </div>
 
@@ -111,11 +96,7 @@ $footer_pattern_image = $upload_dir['baseurl'] . '/images/footer-form-pattern.sv
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline"><i class='bx bxl-youtube' ></i> Youtube</a>
-          </li>
-
-          <li>
-            <a href="#" class="label-2 footer-link hover-underline"><i class='bx bxs-map' ></i> Google Map</a>
+            <a href="#" class="label-2 footer-link hover-underline"><i class='bx bxl-linkedin' ></i> Linkedin</a>
           </li>
 
         </ul>
@@ -125,8 +106,7 @@ $footer_pattern_image = $upload_dir['baseurl'] . '/images/footer-form-pattern.sv
       <div class="footer-bottom">
 
         <p class="copyright">
-          &copy; 2024 Spices. All Rights Reserved | Crafted by <a href="xyz.gmail.com"
-            target="_blank" class="link">Spices</a>
+          &copy; 2024 MTE EXIM Spices. All Rights Reserved 
         </p>
 
       </div>

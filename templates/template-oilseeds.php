@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: All-Pulses
+Template Name: All-Oilseeds
 */
  
 $upload_dir = wp_upload_dir(); 
@@ -2173,7 +2173,8 @@ visibility: visible;
                         <p class="label-2 section-subtitle slider-reveal">Unlocking Global Spice Treasures</p>
 
                         <h1 class="display-1 hero-title slider-reveal">
-                            PULSES <br>
+                            
+                        Oil Seeds <br>
 
                         </h1>
 
@@ -2210,7 +2211,7 @@ visibility: visible;
 <?php
 // Query custom post type 'pulses'
 $pulses_query = new WP_Query(array(
-    'post_type' => 'pulses',
+    'post_type' => 'oilseeds',
     'posts_per_page' => -1 
 ));
 

@@ -12,10 +12,10 @@ $parallax_image = $upload_dir['baseurl'] . '/images/parallax.jpg';
 <!-- 
     - primary meta tags
   -->
-  <title>XYZ-Spices Exporters</title>
-  <meta name="title" content="XYZ-Spices Exporters - Premium Quality Spices from Around the World">
+  <title>MTE Spices</title>
+  <meta name="title" content="MTE Spices - Premium Quality Spices from Around the World">
   <meta name="description"
-    content="Discover premium quality spices sourced from around the world with XYZ-Spices Exporters. Fast, secure, and reliable delivery.">
+    content="Discover premium quality spices sourced from around the world with MTE Spices. Fast, secure, and reliable delivery.">
   <!-- 
     - google font link
   -->

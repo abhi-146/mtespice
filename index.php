@@ -261,7 +261,7 @@ get_header();
       <!-- Parallax Section -->
       <section class="parallax">
         <div class="parallax-content">
-          <h1 style="font-size: 40px;">Premium Quality Spices from Around the World</h1>
+          <h1 style="font-size: 40px;">Global Exporters of Premium Quality Spices</h1>
         </div>
       </section>
 
@@ -282,7 +282,7 @@ get_header();
             MTE EXIM PRIVATE LIMITED, established in 2005, has rapidly grown to become a leading exporter of spices in India. With a commitment to quality and excellence, the company has achieved remarkable success, boasting a turnover of $50 million. Renowned for its premium spices, MTE EXIM PRIVATE LIMITED continues to set the benchmark in the industry, delivering the rich flavors of India to markets worldwide.
             </p>
 
-            <a href="/about-us" class="btn btn-primary">
+            <a href="<?php echo site_url(); ?>/about" class="btn btn-primary">
               <span class="text text-1">Read More</span>
 
               <span class="text text-2" aria-hidden="true">Read More</span>
@@ -301,7 +301,7 @@ get_header();
 
           </figure>
 
-          <!-- <img src="<?php //echo $upload_dir['baseurl'] . '/images/shape-3.jpg'?>" width="197" height="194" loading="lazy" alt="" class="shape"> -->
+          <!-- <img src="<?php// echo $upload_dir['baseurl'] . '/images/shape-3.jpg'?>" width="197" height="194" loading="lazy" alt="" class="shape"> -->
 
         </div>
       </section>
@@ -332,7 +332,7 @@ get_header();
             </p>
 
 
-            <a href="#" class="btn btn-primary">
+            <a href="<?php echo site_url(); ?>/products" class="btn btn-primary">
               <span class="text text-1">View More</span>
 
               <span class="text text-2" aria-hidden="true">View More</span>
@@ -542,7 +542,7 @@ if ($blog_posts->have_posts()) : ?>
 <?php endif; wp_reset_postdata(); ?>
 
 
-          <a href="#" class="btn btn-primary">
+          <a href="<?php echo site_url(); ?>/all-blogs" class="btn btn-primary">
             <span class="text text-1">View Our Blog</span>
 
             <span class="text text-2" aria-hidden="true">View Our Blog</span>

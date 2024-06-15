@@ -2223,9 +2223,9 @@ visibility: visible;
 
 
     <li>
-        <a href="<?php echo esc_url(get_site_url() . '/pulses'); ?>" class="event-card has-before hover:shine">
+        <a href="<?php echo esc_url(get_site_url() . '/all-pulses'); ?>" class="event-card has-before hover:shine">
             <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                <img src="<?php echo $upload_dir['baseurl'] . '/product_images/spices-collage.png'?>" width="350" height="450" loading="lazy" alt="<?php the_title_attribute(); ?>" class="img-cover">
+                <img src="<?php echo $upload_dir['baseurl'] . '/images/photo-collage-pulses.png'?>" width="350" height="450" loading="lazy" alt="<?php the_title_attribute(); ?>" class="img-cover">
             </div>
             <div class="card-content">
 
@@ -2235,11 +2235,23 @@ visibility: visible;
             </div>
         </a>
     </li>
+    <li>
+        <a href="<?php echo esc_url(get_site_url() . '/all-oil-seeds'); ?>" class="event-card has-before hover:shine">
+            <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                <img src="<?php echo $upload_dir['baseurl'] . '/images/oilseeds-collage.png'?>" width="350" height="450" loading="lazy" alt="<?php the_title_attribute(); ?>" class="img-cover">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                    <?php echo esc_html('Oil Seeds'); ?>
+                </h3>
+            </div>
+        </a>
+    </li>
 
     <li>
-        <a href="<?php echo esc_url(get_site_url() . '/nuts'); ?>" class="event-card has-before hover:shine">
+        <a href="<?php echo esc_url(get_site_url() . '/all-oil-seeds'); ?>" class="event-card has-before hover:shine">
             <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                <img src="<?php echo $upload_dir['baseurl'] . '/product_images/spices-collage.png'?>" width="350" height="450" loading="lazy" alt="<?php the_title_attribute(); ?>" class="img-cover">
+                <img src="<?php echo $upload_dir['baseurl'] . '/images/oilseeds-collage.png'?>" width="350" height="450" loading="lazy" alt="<?php the_title_attribute(); ?>" class="img-cover">
             </div>
             <div class="card-content">
                 <h3 class="card-title title-2 text-center" style="margin: 20px;">
