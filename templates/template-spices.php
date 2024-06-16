@@ -2127,7 +2127,7 @@ visibility: visible;
             <section class="section event bg-black-10" aria-label="event">
                 <div class="container">
 
-                    <h2 class="section-subtitle label-2 text-center">NK agro have been one of the leading spice
+                    <h2 class="section-subtitle label-2 text-center">MTE EXIM Spices have been one of the leading spice
                         exporters
                         for over a decade and export various varieties of high grade spices.</h2>
 

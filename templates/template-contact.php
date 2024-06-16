@@ -27,6 +27,11 @@ get_header(); ?>
 
 .left-column {
     margin-bottom: 20px;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
 .map-container {

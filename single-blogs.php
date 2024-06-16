@@ -1,22 +1,25 @@
 <?php
 // single-blog.php
 
-get_header(); 
+get_header();
 ?>
 
 <style>
     /* single-blog.css */
 
+    body {
+        height: 250vh !important; 
+    }
+
 .single-post-content {
-    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding-top: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     font-family: Arial, sans-serif;
     position: relative;
-    top: 125px;
+    top: 150px;
     margin-bottom: 125px;
 }
 
@@ -24,6 +27,7 @@ get_header();
     font-size: 32px;
     color: #333;
     margin-bottom: 20px;
+    text-align: center; 
 }
 
 .post-meta {
@@ -90,11 +94,7 @@ if (have_posts()) {
             <h1><?php the_title(); ?></h1>
             <div class="post-meta">
                 <time datetime="<?php echo get_the_date('c'); ?>"><?php echo get_the_date(); ?></time>
-                <span class="post-category"><?php echo get_the_category_list(', '); ?></span>
-            </div>
-            <div class="post-thumbnail">
-                <?php the_post_thumbnail('full'); ?>
-            </div>
+    </div>
             <div class="post-content">
                 <?php the_content(); ?>
             </div>
@@ -105,5 +105,5 @@ if (have_posts()) {
     echo 'Post not found.';
 }
 
-get_footer();
+
 ?>

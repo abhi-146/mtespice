@@ -462,8 +462,6 @@
     top: 30px;
     left: 25px;
     padding: 5px 10px;
-    color: var(--gold-crayola);
-    background-color: var(--black);
     font-weight: var(--weight-bold);
     letter-spacing: var(--letterSpacing-1);
     line-height: 14px;
@@ -488,5 +486,9 @@
   .event .btn {
     margin-inline: auto;
     margin-block-start: 40px;
+  }
+  
+  .event .section-title {
+    color: black;
   }
   

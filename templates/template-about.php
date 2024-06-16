@@ -4,6 +4,8 @@ Template Name: About
 */
 
 
+$upload_dir = wp_upload_dir(); 
+
 get_header(); ?>
 <style>
 /*-----------------------------------*\
@@ -995,6 +997,7 @@ body.nav-active {
   
   .about-banner {
     position: relative;
+    top: 80px;
     margin-block-end: 120px;
   }
 
@@ -1045,6 +1048,7 @@ body.nav-active {
 
 .vision-parallax{
     background: linear-gradient(109.6deg, rgb(72, 200, 160) 11.2%, rgb(32, 40, 48) 91.3%);
+    color: black;
     height: 400px;
     background-attachment: fixed;
     background-position: center;
@@ -1554,6 +1558,7 @@ body.nav-active {
     
 .vision-parallax{
     background: linear-gradient(109.6deg, rgb(72, 200, 160) 11.2%, rgb(32, 40, 48) 91.3%);
+    color: black;
     height: 400px;
     background-attachment: fixed;
     background-position: center;
@@ -1854,7 +1859,7 @@ body.nav-active {
      */
 
     .hero {
-        height: 880px;
+        height: 8px;
     }
 
     .hero-btn {
@@ -2014,9 +2019,7 @@ body.nav-active {
 }
     </style>
 
-<?php 
-$upload_dir = wp_upload_dir(); 
-?>
+
 <main> <article>
 
 <!-- 
@@ -2055,11 +2058,11 @@ $upload_dir = wp_upload_dir();
 
 
 <!-- Parallax Section -->
-<section class="parallax">
+<!-- <section class="parallax">
     <div class="parallax-content">
         <h1>GREAT TASTE KNOWS NO BOUNDARIES</h1>
     </div>
-</section>
+</section> -->
 
 <!-- 
 - #ABOUT
@@ -2076,19 +2079,9 @@ $upload_dir = wp_upload_dir();
                 class="food_taste_better"></img>
 
             <p class="section-text">
-                Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has
-                been the
-                industrys standard dummy text ever since the when an unknown printer took a galley of type
-                and scrambled
-                it to make a type specimen book It has survived not only five centuries, but also the leap
-                into.
-                Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has
-                been the
-                industrys standard dummy text ever since the when an unknown printer took a galley of type
-                and scrambled
-                it to make a type specimen book It has survived not only five centuries, but also the leap
-                into.
-            </p>
+            Founded in 2005, our company has swiftly risen to become a $50 million enterprise, establishing itself as one of India's leading exporters. Our commitment to excellence and innovation has earned us a prominent place in the global market.
+            Our company thrives under the visionary leadership of Mr. Suman Jaiswal and Mrs. Jayeeti Jaiswal, both of whom are young, dynamic, and committed to driving our success forward. Their robust educational backgrounds and forward-thinking vision have been instrumental in shaping our strategic direction. Complementing their leadership, Mr. Manish Joshi, our Export Head, exemplifies dedication and expertise. With his extensive experience, profound product knowledge, and approachable demeanor, he plays a crucial role in maintaining our high standards and ensuring customer satisfaction. Together, our leadership and team are dedicated to fostering innovation, excellence, and growth in the global export market.    
+        </p>
 
 
 

@@ -5,8 +5,8 @@ $upload_dir = wp_upload_dir();
 // Generate the full URL to the image
 $image_url = $upload_dir['baseurl'] . '/images/badge-1.png';
 $hr_slider_1 = $upload_dir['baseurl'] . '/images/hr-slider-1.jpg';
-$hr_slider_2 = $upload_dir['baseurl'] . '/images/hr-slider-2.jpg';
-$hr_slider_3 = $upload_dir['baseurl'] . '/images/hr-slider-2.jpg';
+$hr_slider_pulses = $upload_dir['baseurl'] . '/images/hero-pulses.jpg';
+$hr_slider_nuts = $upload_dir['baseurl'] . '/images/hero-nuts.jpg';
 $img_pattern = $upload_dir['baseurl'] . '/images/img-pattern.svg';
 $badge2bg = $upload_dir['baseurl'] . '/images/img-pattern.svg';
 get_header(); 
@@ -47,6 +47,12 @@ get_header();
     background-size: contain;
     animation: rotate360 15s linear infinite;
   }
+
+  .grid-list.below-hero {
+    grid-template-columns: repeat(3, 0.3fr);
+    position: relative;
+    left: 50px;
+  }
 </style>
 
 
@@ -55,77 +61,54 @@ get_header();
       -->
 <section class="hero text-center" aria-label="home" id="home">
 
-        <ul class="hero-slider" data-hero-slider>
+<ul class="hero-slider" data-hero-slider>
+  <li class="slider-item active" data-hero-slider-item>
+    <div class="slider-bg">
+      <img src="<?php echo esc_url($hr_slider_1); ?>" width="1880" height="950" alt="" class="img-cover">
+    </div>
+    <p class="label-2 section-subtitle slider-reveal">Unlocking Global Spice Treasures</p>
+    <h1 class="display-1 hero-title slider-reveal">
+      Discover exotic flavors <br>
+      with Mte Spice
+    </h1>
+    <a href="<?php echo get_site_url() . '/all-spices'; ?>" class="btn btn-primary slider-reveal">
+      <span class="text text-1">Explore Now</span>
+      <span class="text text-2" aria-hidden="true">Explore Now</span>
+    </a>
+  </li>
 
-          <li class="slider-item active" data-hero-slider-item>
-
-            <div class="slider-bg">
-              <img src="<?php echo esc_url($hr_slider_1); ?>" width="1880" height="950" alt="" class="img-cover">
-            </div>
-
-            <p class="label-2 section-subtitle slider-reveal">Unlocking Global Spice Treasures</p>
-
-            <h1 class="display-1 hero-title slider-reveal">
-              Discover exotic flavors <br>
-              with Mtespice
-            </h1>
-
-
-
-            <a href="#" class="btn btn-primary slider-reveal">
-              <span class="text text-1">Explore Now</span>
-
-              <span class="text text-2" aria-hidden="true">Explore Now</span>
-            </a>
-
-          </li>
-          
-          <!-- just comment them out for slider effect -->
-
-          <li class="slider-item" data-hero-slider-item>
-
-            <div class="slider-bg">
-              <img src="<?php echo esc_url($hr_slider_2); ?>" width="1880" height="950" alt="" class="img-cover">
-            </div>
-
-            <p class="label-2 section-subtitle slider-reveal">Unlocking Global Spice Treasures</p>
-
-            <h1 class="display-1 hero-title slider-reveal">
-              Flavors Inspired by <br>
-              the Seasons
-            </h1>
+  <li class="slider-item" data-hero-slider-item>
+    <div class="slider-bg">
+      <img src="<?php echo esc_url($hr_slider_pulses); ?>" width="1880" height="950" alt="" class="img-cover" style="opacity: 0.1;">
+    </div>
+    <p class="label-2 section-subtitle slider-reveal">Unveiling the World of Pulses</p>
+    <h1 class="display-1 hero-title slider-reveal">
+      Savor the richness of global pulses <br>
+      with Mte Spice
+    </h1>
+    <a href="<?php echo get_site_url() . '/all-pulses'; ?>" class="btn btn-primary slider-reveal">
+      <span class="text text-1">Explore Now</span>
+      <span class="text text-2" aria-hidden="true">Explore Now</span>
+    </a>
+  </li>
 
 
-            <a href="#" class="btn btn-primary slider-reveal">
-              <span class="text text-1">Explore Now</span>
+  <li class="slider-item" data-hero-slider-item>
+    <div class="slider-bg">
+      <img src="<?php echo esc_url($hr_slider_nuts); ?>" width="1880" height="950" alt="" class="img-cover" style="opacity: 0.1;">
+    </div>
+    <p class="label-2 section-subtitle slider-reveal">Exploring Global Nut Delights</p>
+    <h1 class="display-1 hero-title slider-reveal">
+      Indulge in the world's finest nuts <br>
+      with Mte Spice
+    </h1>
+    <a href="<?php echo get_site_url() . '/all-nuts'; ?>" class="btn btn-primary slider-reveal">
+      <span class="text text-1">Explore Now</span>
+      <span class="text text-2" aria-hidden="true">Explore Now</span>
+    </a>
+  </li>
+</ul>
 
-              <span class="text text-2" aria-hidden="true">Explore Now</span>
-            </a>
-
-          </li>
-
-          <li class="slider-item" data-hero-slider-item>
-
-            <div class="slider-bg">
-              <img src="<?php echo esc_url($hr_slider_3); ?>" width="1880" height="950" alt="" class="img-cover">
-            </div>
-
-            <p class="label-2 section-subtitle slider-reveal">Unlocking Global Spice Treasures</p>
-
-            <h1 class="display-1 hero-title slider-reveal">
-              Where every flavor <br>
-              tells a story
-            </h1>
-
-            <a href="#" class="btn btn-primary slider-reveal">
-              <span class="text text-1">Explore Now</span>
-
-              <span class="text text-2" aria-hidden="true">Explore Now</span>
-            </a>
-
-          </li>
-
-        </ul>
 
         <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
           <ion-icon name="chevron-back"></ion-icon>
@@ -154,101 +137,49 @@ get_header();
 
           </p>
 
-          <ul class="grid-list">
+          <ul class="grid-list below-hero">
 
-            <li>
-              <div class="service-card">
+<li>
+  <a href="<?php echo esc_url(get_site_url() . '/spices'); ?>" class="event-card has-before hover:shine">
+    <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+      <img src="<?php echo $upload_dir['baseurl'] . '/product_images/spices-collage.png'; ?>" width="350" height="450" loading="lazy" alt="<?php the_title_attribute(); ?>" class="img-cover">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title title-2 text-center" style="margin: 20px;">
+        <?php echo esc_html('Spices'); ?>
+      </h3>
+    </div>
+  </a>
+</li>
 
-                <a class="has-before hover:shine">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="<?php echo $upload_dir['baseurl'] . '/images/free.jpg'?>" width="285" height="336" loading="lazy" alt="Breakfast"
-                      class="img-cover">
-                  </figure>
-                </a>
+<li>
+  <a href="<?php echo esc_url(get_site_url() . '/all-pulses'); ?>" class="event-card has-before hover:shine">
+    <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+      <img src="<?php echo $upload_dir['baseurl'] . '/images/photo-collage-pulses.png'; ?>" width="350" height="450" loading="lazy" alt="<?php the_title_attribute(); ?>" class="img-cover">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title title-2 text-center" style="margin: 20px;">
+        <?php echo esc_html('Pulses'); ?>
+      </h3>
+    </div>
+  </a>
+</li>
 
-                <div class="card-content">
+<li>
+  <a href="<?php echo esc_url(get_site_url() . '/all-oil-seeds'); ?>" class="event-card has-before hover:shine">
+    <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+      <img src="<?php echo $upload_dir['baseurl'] . '/images/oilseeds-collage.png'; ?>" width="350" height="450" loading="lazy" alt="<?php the_title_attribute(); ?>" class="img-cover">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title title-2 text-center" style="margin: 20px;">
+        <?php echo esc_html('Nuts'); ?>
+      </h3>
+    </div>
+  </a>
+</li>
 
-                  <h3 class="btn-text card-title">
-                    <p>Free Shipping</p>
-                  </h3>
 
-                  <p class="card-title" style="color: black">Fast,Free Shipping</p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <a class="has-before hover:shine">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="<?php echo $upload_dir['baseurl'] . '/images/payment.jpg'?>" width="285" height="336" loading="lazy" alt="Breakfast"
-                      class="img-cover">
-                  </figure>
-                </a>
-
-                <div class="card-content">
-
-                  <h3 class="btn-text card-title">
-                    <p>Secure Payment</p>
-                  </h3>
-
-                  <p class="card-title" style="color: black">Safe & Secure Payment</p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <a class="has-before hover:shine">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="<?php echo $upload_dir['baseurl'] . '/images/carefully.jpg'?>" width="285" height="336" loading="lazy" alt="Appetizers"
-                      class="img-cover">
-                  </figure>
-                </a>
-
-                <div class="card-content">
-
-                  <h3 class="btn-text card-title">
-                    <p>Delivered Carefully</p>
-                  </h3>
-
-                  <p class="card-title" style="color: black">Carefull Delivery always</p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <a class="has-before hover:shine">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="<?php echo $upload_dir['baseurl'] . '/images/ex-service.jpg'?>" width="285" height="336" loading="lazy" alt="Drinks"
-                      class="img-cover">
-                  </figure>
-                </a>
-
-                <div class="card-content">
-
-                  <h3 class="btn-text card-title">
-                    <p>Excellent Service</p>
-                  </h3>
-
-                  <p class="card-title" style="color: black">Service beyond care</p>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
+</ul>
 
           <img src="<?php echo $upload_dir['baseurl'] . '/images/shape-1.png'?>" width="246" height="412" loading="lazy" alt="shape"
             class="shape shape-1 move-anim">
@@ -313,7 +244,7 @@ get_header();
       <section class="special-dish text-center" aria-labelledby="dish-label">
 
         <div class="special-dish-banner">
-          <img src="<?php echo $upload_dir['baseurl'] . '/images/special-dish-banner.jpg'?>" width="940" height="900" loading="lazy" alt="special dish"
+          <img src="<?php echo $upload_dir['baseurl'] . '/images/red_chilli.png'?>" width="940" height="900" loading="lazy" alt="special dish"
             class="img-cover">
         </div>
 
@@ -324,11 +255,10 @@ get_header();
 
             <p class="section-subtitle label-2">Special Spice</p>
 
-            <h2 class="headline-1 section-title" style="color: black;">Black Pepper</h2>
+            <h2 class="headline-1 section-title" style="color: black;">Red Chilli</h2>
 
             <p class="section-text" style="color: black;">
-              Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
-              industrys standard dummy text ever since the when an unknown printer took a galley of type.
+              Red Chilli is known for its vibrant color and spicy flavor. It is a key ingredient in many cuisines worldwide, adding heat and enhancing the taste of dishes. Whether used fresh, dried, or powdered, red chilli brings a fiery kick to your meals.
             </p>
 
 
@@ -432,63 +362,64 @@ get_header();
 
     <ul class="grid-list">
 
-      <li class="feature-item">
-        <div class="feature-card">
+<li class="feature-item">
+  <div class="feature-card">
 
-          <div class="card-icon">
-            <img src="<?php echo $upload_dir['baseurl'] . '/images/spices.png'?>" width="100" height="80" loading="lazy" alt="Premium Quality Spices Icon">
-          </div>
+    <div class="card-icon">
+      <img src="<?php echo $upload_dir['baseurl'] . '/images/spices.png'; ?>" width="100" height="80" loading="lazy" alt="Premium Quality Spices Icon">
+    </div>
 
-          <h3 class="title-2 card-title">Premium Quality Spices</h3>
+    <h3 class="title-2 card-title">Premium Quality Spices</h3>
 
-          <p class="label-1 card-text">We source the finest spices from around the world to ensure the highest quality and freshness.</p>
+    <p class="label-1 card-text">We source the finest spices from around the world to ensure the highest quality and freshness.</p>
 
-        </div>
-      </li>
+  </div>
+</li>
 
-      <li class="feature-item">
-        <div class="feature-card">
+<li class="feature-item">
+  <div class="feature-card">
 
-          <div class="card-icon">
-            <img src="<?php echo $upload_dir['baseurl'] . '/images/organic.png'?>" width="100" height="80" loading="lazy" alt="Organic and Sustainable Icon">
-          </div>
+    <div class="card-icon">
+      <img src="<?php echo $upload_dir['baseurl'] . '/images/organic.png'; ?>" width="100" height="80" loading="lazy" alt="Organic and Sustainable Icon">
+    </div>
 
-          <h3 class="title-2 card-title">Organic and Sustainable</h3>
+    <h3 class="title-2 card-title">Organic and Sustainable</h3>
 
-          <p class="label-1 card-text">Our products are certified organic and sustainably sourced, supporting eco-friendly practices.</p>
+    <p class="label-1 card-text">Our products are certified organic and sustainably sourced, supporting eco-friendly practices.</p>
 
-        </div>
-      </li>
+  </div>
+</li>
 
-      <li class="feature-item">
-        <div class="feature-card">
+<li class="feature-item">
+  <div class="feature-card">
 
-          <div class="card-icon">
-            <img src="<?php echo $upload_dir['baseurl'] . '/images/think-outside-the-box.png'?>" width="100" height="80" loading="lazy" alt="Unique Blends Icon">
-          </div>
+    <div class="card-icon">
+      <img src="<?php echo $upload_dir['baseurl'] . '/images/think-outside-the-box.png'; ?>" width="100" height="80" loading="lazy" alt="Unique Blends Icon">
+    </div>
 
-          <h3 class="title-2 card-title">Unique Blends</h3>
+    <h3 class="title-2 card-title">Unique Blends</h3>
 
-          <p class="label-1 card-text">We offer a variety of unique spice blends that add a special touch to your culinary creations.</p>
+    <p class="label-1 card-text">We offer a variety of unique spice blends that add a special touch to your culinary creations.</p>
 
-        </div>
-      </li>
+  </div>
+</li>
 
-      <li class="feature-item">
-        <div class="feature-card">
+<li class="feature-item">
+  <div class="feature-card">
 
-          <div class="card-icon">
-            <img src="<?php echo $upload_dir['baseurl'] . '/images/support.png'?>" width="100" height="80" loading="lazy" alt="Customer Support Icon">
-          </div>
+    <div class="card-icon">
+      <img src="<?php echo $upload_dir['baseurl'] . '/images/support.png'; ?>" width="100" height="80" loading="lazy" alt="Expert Sourcing Icon">
+    </div>
 
-          <h3 class="title-2 card-title">Customer Support</h3>
+    <h3 class="title-2 card-title">Expert Sourcing</h3>
 
-          <p class="label-1 card-text">Our dedicated support team is here to help you with any inquiries or issues you may have.</p>
+    <p class="label-1 card-text">Our team of experts meticulously selects and sources the best spices from trusted growers.</p>
 
-        </div>
-      </li>
+  </div>
+</li>
 
-    </ul>
+</ul>
+
 
     <img src="<?php echo $upload_dir['baseurl'] . '/images/shape-7.png'?>" width="208" height="178" loading="lazy" alt="Decorative Shape" class="shape shape-1">
 
