@@ -158,7 +158,10 @@ table.specifications tr:nth-child(odd) {
 </style>
 
 <div class="hero">
-            <img src="<?php the_post_thumbnail( 'full' ); ?>" alt="Java Peanuts">
+    <div class="hero-img">
+    <?php echo get_the_post_thumbnail( get_the_ID(), 'full', array( 'alt' => 'Java Peanuts' ) ); ?>
+    </div>
+
         </div>
         <div class="container">
             <div class="main-content">

@@ -2225,7 +2225,7 @@ if ($pulses_query->have_posts()) {
         $permalink = get_permalink();
         
         // Get the custom field 'icon_image' (if needed)
-        $icon_image = get_field('icon_image');
+        // $icon_image = get_field('icon_image');
         ?>
         <li>
             <a href="<?php echo esc_url($permalink); ?>" class="event-card has-before hover:shine">
