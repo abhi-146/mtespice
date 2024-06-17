@@ -30,7 +30,7 @@ get_header(); ?>
  * COLORS
  */
 
---gold-crayola: rgb(72, 200, 160);
+--gold-crayola: #20a7db;
 --quick-silver: hsla(0, 0%, 65%, 1);
 --davys-grey: hsla(30, 3%, 34%, 1);
 --smoky-black-1: hsla(40, 12%, 5%, 1);
