@@ -47,12 +47,15 @@ get_header();
     background-size: contain;
     animation: rotate360 15s linear infinite;
   }
-
+  @media (min-width: 768px) {
   .grid-list.below-hero {
     grid-template-columns: repeat(3, 0.3fr);
     position: relative;
     left: 50px;
   }
+}
+
+
 </style>
 
 
@@ -128,25 +131,25 @@ get_header();
       <section class="section service bg-black-10 text-center" aria-label="service">
         <div class="container">
 
-          <p class="section-subtitle label-2">Flavors For Royalty</p>
+        <p class="section-subtitle label-2">Flavors For Royalty</p>
 
-          <h2 class="headline-1 section-title" style="color: black">We Offer Premium Spices</h2>
+        <h2 class="headline-1 section-title" style="color: black">We Offer Premium Spices, Pulses, and Nuts</h2>
 
-          <p class="section-text" style="color: black">
-          Discover the rich, aromatic, and flavorful world of spices. Our spices are sourced from the finest farms and meticulously processed to bring you the best in quality and taste.
+        <p class="section-text" style="color: black">
+          Discover the rich, aromatic, and flavorful world of spices, pulses, and nuts. Our products come from the best farms and are carefully processed to bring you the highest quality and taste.
+        </p>
 
-          </p>
 
           <ul class="grid-list below-hero">
 
 <li>
   <a href="<?php echo esc_url(get_site_url() . '/spices'); ?>" class="event-card has-before hover:shine">
     <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-      <img src="<?php echo $upload_dir['baseurl'] . '/product_images/spices-collage.png'; ?>" width="350" height="450" loading="lazy" alt="<?php the_title_attribute(); ?>" class="img-cover">
+      <img src="<?php echo $upload_dir['baseurl'] . '/product_images/spices-collage.png'; ?>" width="350" height="450" loading="lazy" alt="spices" class="img-cover">
     </div>
     <div class="card-content">
       <h3 class="card-title title-2 text-center" style="margin: 20px;">
-        <?php echo esc_html('Spices'); ?>
+        Spices
       </h3>
     </div>
   </a>
@@ -155,11 +158,24 @@ get_header();
 <li>
   <a href="<?php echo esc_url(get_site_url() . '/all-pulses'); ?>" class="event-card has-before hover:shine">
     <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-      <img src="<?php echo $upload_dir['baseurl'] . '/images/photo-collage-pulses.png'; ?>" width="350" height="450" loading="lazy" alt="<?php the_title_attribute(); ?>" class="img-cover">
+      <img src="<?php echo $upload_dir['baseurl'] . '/images/photo-collage-pulses.png'; ?>" width="350" height="450" loading="lazy" alt="Pulses" class="img-cover">
     </div>
     <div class="card-content">
       <h3 class="card-title title-2 text-center" style="margin: 20px;">
-        <?php echo esc_html('Pulses'); ?>
+        Pulses
+      </h3>
+    </div>
+  </a>
+</li>
+
+<li>
+  <a href="<?php echo esc_url(get_site_url() . '/all-nuts'); ?>" class="event-card has-before hover:shine">
+    <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+      <img src="<?php echo $upload_dir['baseurl'] . '/images/nuts-collage.png'; ?>" width="350" height="450" loading="lazy" alt="Nuts" class="img-cover">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title title-2 text-center" style="margin: 20px;">
+        Nuts
       </h3>
     </div>
   </a>
@@ -168,15 +184,42 @@ get_header();
 <li>
   <a href="<?php echo esc_url(get_site_url() . '/all-oil-seeds'); ?>" class="event-card has-before hover:shine">
     <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-      <img src="<?php echo $upload_dir['baseurl'] . '/images/oilseeds-collage.png'; ?>" width="350" height="450" loading="lazy" alt="<?php the_title_attribute(); ?>" class="img-cover">
+      <img src="<?php echo $upload_dir['baseurl'] . '/images/oil-seeds-collage.png'; ?>" width="350" height="450" loading="lazy" alt="Oil seeds" class="img-cover">
     </div>
     <div class="card-content">
       <h3 class="card-title title-2 text-center" style="margin: 20px;">
-        <?php echo esc_html('Nuts'); ?>
+        Oil seeds
       </h3>
     </div>
   </a>
 </li>
+
+<li>
+  <a href="<?php echo esc_url(get_site_url() . '/all-vegetables'); ?>" class="event-card has-before hover:shine">
+    <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+      <img src="<?php echo $upload_dir['baseurl'] . '/images/vegetables-collage.png'; ?>" width="350" height="450" loading="lazy" alt="Vegetables" class="img-cover">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title title-2 text-center" style="margin: 20px;">
+        Vegetables
+      </h3>
+    </div>
+  </a>
+</li>
+
+<li>
+  <a href="<?php echo esc_url(get_site_url() . '/all-other-products'); ?>" class="event-card has-before hover:shine">
+    <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+      <img src="<?php echo $upload_dir['baseurl'] . '/images/other-products-collage.png'; ?>" width="350" height="450" loading="lazy" alt="Other products" class="img-cover">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title title-2 text-center" style="margin: 20px;">
+        Others
+      </h3>
+    </div>
+  </a>
+</li>
+
 
 
 </ul>
@@ -189,10 +232,12 @@ get_header();
         </div>
       </section>
 
+      
+
       <!-- Parallax Section -->
       <section class="parallax">
         <div class="parallax-content">
-          <h1 style="font-size: 40px;">Global Exporters of Premium Quality Spices</h1>
+          <h1 style="font-size: 40px; font-family: 'Berkshire Swash', serif;">Global Exporters of Premium Quality Spices, Pulses and Nuts</h1>
         </div>
       </section>
 
@@ -231,8 +276,6 @@ get_header();
             </div>
 
           </figure>
-
-          <!-- <img src="<?php// echo $upload_dir['baseurl'] . '/images/shape-3.jpg'?>" width="197" height="194" loading="lazy" alt="" class="shape"> -->
 
         </div>
       </section>
@@ -275,77 +318,6 @@ get_header();
 
         <img src="<?php echo $upload_dir['baseurl'] . '/images/shape-9.png'?>" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
 
-      </section>
-
-
-      <!-- 
-    - #TESTIMONIALS
--->
-
-      <section class="section-container section testi text-center has-bg-image"
-        style="background-image: url('<?php echo $upload_dir['baseurl'] . '/images/testimonial-bg.jpg'?>')" aria-label="testimonials">
-        <div class="testimonial">
-          <div class="testi-content">
-            <div class="slides">
-              <div class="slide">
-                <img src="<?php echo $upload_dir['baseurl'] . '/images/testi-avatar.jpg'?>" alt="" class="image" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ad quisquam officia qui esse
-                  dolorum soluta modi voluptatibus reiciendis enim porro laudantium ipsum, sunt aliquam consequatur
-                  excepturi architecto omnis veniam.</p>
-                <i class='bx bxs-quote-alt-left quote-icon'></i>
-                <div class="details">
-                  <span class="name">David Beckhem</span>
-                </div>
-              </div>
-              <!-- Add more slides here -->
-              <div class="slide">
-                <img src="<?php echo $upload_dir['baseurl'] . '/images/testimonial-1.jpg'?>" alt="" class="image" />
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque illum quam iusto ipsa perferendis
-                  repellat, consequatur inventore rerum corrupti deserunt voluptate nisi quod obcaecati ab, reiciendis
-                  ratione odit. Sapiente, tempora?</p>
-                <i class='bx bxs-quote-alt-left quote-icon'></i>
-                <div class="details">
-                  <span class="name">John Doe</span>
-                </div>
-              </div>
-              <div class="slide">
-                <img src="<?php echo $upload_dir['baseurl'] . '/images/testimonial-2.jpg'?>" alt="" class="image" />
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque illum quam iusto ipsa perferendis
-                  repellat, consequatur inventore rerum corrupti deserunt voluptate nisi quod obcaecati ab, reiciendis
-                  ratione odit. Sapiente, tempora?</p>
-                <i class='bx bxs-quote-alt-left quote-icon'></i>
-                <div class="details">
-                  <span class="name">Willy Williams</span>
-                </div>
-              </div>
-              <div class="slide">
-                <img src="<?php echo $upload_dir['baseurl'] . '/images/testimonial-3.jpg'?>" alt="" class="image" />
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque illum quam iusto ipsa perferendis
-                  repellat, consequatur inventore rerum corrupti deserunt voluptate nisi quod obcaecati ab, reiciendis
-                  ratione odit. Sapiente, tempora?</p>
-                <i class='bx bxs-quote-alt-left quote-icon'></i>
-                <div class="details">
-                  <span class="name">Jackie Chan</span>
-                </div>
-              </div>
-              <div class="slide">
-                <img src="<?php echo $upload_dir['baseurl'] . '/images/testimonial-4.jpg'?>" alt="" class="image" />
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque illum quam iusto ipsa perferendis
-                  repellat, consequatur inventore rerum corrupti deserunt voluptate nisi quod obcaecati ab, reiciendis
-                  ratione odit. Sapiente, tempora?</p>
-                <i class='bx bxs-quote-alt-left quote-icon'></i>
-                <div class="details">
-                  <span class="name">Christopher Nolan</span>
-                </div>
-              </div>
-            </div>
-            <!-- Navigation controls -->
-            <div class="navigation">
-              <button class="prev">&#10094;</button>
-              <button class="next">&#10095;</button>
-            </div>
-          </div>
-        </div>
       </section>
 
 
@@ -418,6 +390,63 @@ get_header();
   </div>
 </li>
 
+<li class="feature-item">
+  <div class="feature-card">
+
+    <div class="card-icon">
+      <img src="<?php echo $upload_dir['baseurl'] . '/images/fast_delivery.png'; ?>" width="100" height="80" loading="lazy" alt="Fast & Safe Dispatch Icon">
+    </div>
+
+    <h3 class="title-2 card-title">Fast & Safe Dispatch</h3>
+
+    <p class="label-1 card-text">We ensure your orders are dispatched quickly and safely to reach you promptly.</p>
+
+  </div>
+</li>
+
+<li class="feature-item">
+  <div class="feature-card">
+
+    <div class="card-icon">
+      <img src="<?php echo $upload_dir['baseurl'] . '/images/variety.png'; ?>" width="100" height="80" loading="lazy" alt="Variety of Products Icon">
+    </div>
+
+    <h3 class="title-2 card-title">Variety of Products</h3>
+
+    <p class="label-1 card-text">Explore our wide range of products to meet your diverse culinary needs and preferences.</p>
+
+  </div>
+</li>
+
+<li class="feature-item">
+  <div class="feature-card">
+
+    <div class="card-icon">
+      <img src="<?php echo $upload_dir['baseurl'] . '/images/customer.png'; ?>" width="100" height="80" loading="lazy" alt="Customer Relationship Icon">
+    </div>
+
+    <h3 class="title-2 card-title">Customer Relationship</h3>
+
+    <p class="label-1 card-text">We value our customers and strive to build strong relationships based on trust and satisfaction.</p>
+
+  </div>
+</li>
+
+<li class="feature-item">
+  <div class="feature-card">
+
+    <div class="card-icon">
+      <img src="<?php echo $upload_dir['baseurl'] . '/images/prices.png'; ?>" width="100" height="80" loading="lazy" alt="Reasonable Prices Icon">
+    </div>
+
+    <h3 class="title-2 card-title">Reasonable Prices</h3>
+
+    <p class="label-1 card-text">Enjoy quality products at affordable prices without compromising on excellence.</p>
+
+  </div>
+</li>
+
+
 </ul>
 
 
@@ -427,6 +456,59 @@ get_header();
 
   </div>
 </section>
+
+
+      <!-- 
+    - #TESTIMONIALS
+-->
+
+      <section class="section-container section testi text-center has-bg-image"
+        style="background-image: url('<?php echo $upload_dir['baseurl'] . '/images/testimonial-bg.jpg'?>')" aria-label="testimonials">
+        <div class="testimonial">
+          <div class="testi-content">
+            <div class="slides">
+
+              <div class="slide">
+                <img src="<?php echo $upload_dir['baseurl'] . '/images/hasan.png'?>" alt="" class="image" />
+                <p>They have been our go-to spice supplier for years and we have never been disappointed.</p>
+                <i class='bx bxs-quote-alt-left quote-icon'></i>
+                <div class="details">
+                  <p class="name">Mr. Hassan</p>
+                  <p class="name">Trader in Dubai</p>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img src="<?php echo $upload_dir['baseurl'] . '/images/Julie.png'?>" alt="" class="image" />
+                <p>We never looked back after associating with Suman Exports. Their quality and service is consistent.</p>
+                <i class='bx bxs-quote-alt-left quote-icon'></i>
+                <div class="details">
+                  <p class="name">Mrs. Julie</p>
+                  <p class="name">South American Food Processor</p>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img src="<?php echo $upload_dir['baseurl'] . '/images/Stuart.png'?>" alt="" class="image" />
+                <p>We never looked back after associating with Suman Exports. Their quality and service is consistent.</p>
+                <i class='bx bxs-quote-alt-left quote-icon'></i>
+                <div class="details">
+                  <p class="name">Mr. Stuart Patrick</p>
+                  <p class="name">Canada Hypermarket chain owner</p>
+                </div>
+              </div>
+
+
+            <!-- Navigation controls -->
+            <div class="navigation">
+              <button class="prev">&#10094;</button>
+              <button class="next">&#10095;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
 
 
       <!-- 

@@ -73,7 +73,7 @@ $parallax_image = $upload_dir['baseurl'] . '/images/parallax.jpg';
 <header class="header" data-header>
     <div class="container">
 
-      <a href="#" class="logo">
+      <a href="<?php echo get_site_url();?>" class="logo">
         <img src="<?php echo $upload_dir['baseurl'] . '/images/spicy_logo.png'?>" width="110" height="50" alt="Grilli - Home">
       </a>
 
@@ -83,7 +83,7 @@ $parallax_image = $upload_dir['baseurl'] . '/images/parallax.jpg';
           <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
         </button>
 
-        <a href="#" class="logo">
+        <a href="<?php echo get_site_url();?>" class="logo">
           <img src="<?php echo $upload_dir['baseurl'] . '/images/spicy_logo.png'?>" width="160" height="50" alt="Grilli - Home">
         </a>
 
@@ -99,14 +99,14 @@ $parallax_image = $upload_dir['baseurl'] . '/images/parallax.jpg';
           </li>
 
           <li class="navbar-item">
-            <a href="<?php echo site_url(); ?>/about" class="navbar-link hover-underline">
+            <a href="<?php echo site_url(); ?>/about-us/" class="navbar-link hover-underline">
               <div class="separator"></div>
 
               <span class="span">About Us</span>
             </a>
           </li>
           <li class="navbar-item">
-            <a href="<?php echo site_url(); ?>/products" class="navbar-link hover-underline">
+            <a href="<?php echo site_url(); ?>/products/" class="navbar-link hover-underline">
               <div class="separator"></div>
 
               <span class="span">Products</span>
@@ -114,7 +114,7 @@ $parallax_image = $upload_dir['baseurl'] . '/images/parallax.jpg';
           </li>
 
           <li class="navbar-item">
-            <a href="<?php echo site_url(); ?>/all-blogs" class="navbar-link hover-underline">
+            <a href="<?php echo site_url(); ?>/all-blogs/" class="navbar-link hover-underline">
               <div class="separator"></div>
 
               <span class="span">Our Blog</span>
@@ -122,7 +122,7 @@ $parallax_image = $upload_dir['baseurl'] . '/images/parallax.jpg';
           </li>
 
           <li class="navbar-item">
-            <a href="<?php echo site_url(); ?>/contact" class="navbar-link hover-underline">
+            <a href="<?php echo site_url(); ?>/contact/" class="navbar-link hover-underline">
               <div class="separator"></div>
 
               <span class="span">Contact</span>
@@ -135,13 +135,15 @@ $parallax_image = $upload_dir['baseurl'] . '/images/parallax.jpg';
           <p class="headline-1 navbar-title">Visit Us</p>
 
           <address class="body-4">
-            something something <br>
-            London 9578, UK
+          MTE Exim Pvt Ltd<br>
+                19, Armenian Street, 4th Floor, Suite No 513,<br>
+                Kolkata – 700001, India<br>
+                Mobile : +91 97487 25155 
           </address>
 
 
 
-          <a href="mailto:xyz.com" class="body-4 sidebar-link">jobhibataoge.com</a>
+          <a href="mailto:xyz.com" class="body-4 sidebar-link">info@mtespice.com</a>
 
 
         </div>

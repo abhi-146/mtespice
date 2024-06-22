@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: All-Oilseeds
+Template Name: All-Nuts
 */
  
 $upload_dir = wp_upload_dir(); 
@@ -2150,6 +2150,16 @@ visibility: visible;
 }
 
 }
+
+@media (min-width: 768px) {
+  .hero{
+    min-height: 60vh;
+    max-height: 60vh;
+  }
+  .section-subtitle {
+    font-size: 25px;
+  }
+}
 </style>
 
 <main>
@@ -2173,8 +2183,7 @@ visibility: visible;
                         <p class="label-2 section-subtitle slider-reveal">Unlocking Global Spice Treasures</p>
 
                         <h1 class="display-1 hero-title slider-reveal">
-                            
-                        Oil Seeds <br>
+                            NUTS <br>
 
                         </h1>
 
@@ -2209,15 +2218,15 @@ visibility: visible;
                         <ul class="grid-list">
 
 <?php
-// Query custom post type 'pulses'
-$pulses_query = new WP_Query(array(
-    'post_type' => 'oilseeds',
+// Query custom post type 'nuts'
+$nuts_query = new WP_Query(array(
+    'post_type' => 'nuts',
     'posts_per_page' => -1 
 ));
 
-if ($pulses_query->have_posts()) {
-    while ($pulses_query->have_posts()) {
-        $pulses_query->the_post();
+if ($nuts_query->have_posts()) {
+    while ($nuts_query->have_posts()) {
+        $nuts_query->the_post();
         
         // Get the featured image URL
         $featured_image = get_the_post_thumbnail_url(get_the_ID(), 'full');
@@ -2226,7 +2235,7 @@ if ($pulses_query->have_posts()) {
         $permalink = get_permalink();
         
         // Get the custom field 'icon_image' (if needed)
-        $icon_image = get_field('icon_image');
+        // $icon_image = get_field('icon_image');
         ?>
         <li>
             <a href="<?php echo esc_url($permalink); ?>" class="event-card has-before hover:shine">
@@ -2253,7 +2262,7 @@ if ($pulses_query->have_posts()) {
     wp_reset_postdata();
 } else {
     // No posts found
-    echo '<p>No pulses found.</p>';
+    echo '<p>No nuts found.</p>';
 }
 ?>
 

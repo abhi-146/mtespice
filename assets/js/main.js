@@ -91,59 +91,65 @@ document.addEventListener("DOMContentLoaded", function() {
   const heroSliderPrevBtn = document.querySelector("[data-prev-btn]");
   const heroSliderNextBtn = document.querySelector("[data-next-btn]");
   
-  let currentSlidePos = 0;
-  let lastActiveSliderItem = heroSliderItems[0];
+  if (heroSlider && heroSliderItems.length > 0 && heroSliderPrevBtn && heroSliderNextBtn) {
+    let currentSlidePos = 0;
+    let lastActiveSliderItem = heroSliderItems[0];
+    let autoSlideInterval;
   
-  const updateSliderPos = function () {
-    lastActiveSliderItem.classList.remove("active");
-    heroSliderItems[currentSlidePos].classList.add("active");
-    lastActiveSliderItem = heroSliderItems[currentSlidePos];
-  }
-  
-  const slideNext = function () {
-    if (currentSlidePos >= heroSliderItems.length - 1) {
-      currentSlidePos = 0;
-    } else {
-      currentSlidePos++;
+    const updateSliderPos = function () {
+      if (lastActiveSliderItem) {
+        lastActiveSliderItem.classList.remove("active");
+      }
+      heroSliderItems[currentSlidePos].classList.add("active");
+      lastActiveSliderItem = heroSliderItems[currentSlidePos];
     }
   
-    updateSliderPos();
-  }
+    const slideNext = function () {
+      if (currentSlidePos >= heroSliderItems.length - 1) {
+        currentSlidePos = 0;
+      } else {
+        currentSlidePos++;
+      }
   
-  heroSliderNextBtn.addEventListener("click", slideNext);
-  
-  const slidePrev = function () {
-    if (currentSlidePos <= 0) {
-      currentSlidePos = heroSliderItems.length - 1;
-    } else {
-      currentSlidePos--;
+      updateSliderPos();
     }
   
+    const slidePrev = function () {
+      if (currentSlidePos <= 0) {
+        currentSlidePos = heroSliderItems.length - 1;
+      } else {
+        currentSlidePos--;
+      }
+  
+      updateSliderPos();
+    }
+  
+    heroSliderNextBtn.addEventListener("click", slideNext);
+    heroSliderPrevBtn.addEventListener("click", slidePrev);
+  
+    const autoSlide = function () {
+      autoSlideInterval = setInterval(slideNext, 10000);
+    }
+  
+    const addEventOnElements = function(elements, event, handler) {
+      elements.forEach(element => {
+        if (element) {
+          element.addEventListener(event, handler);
+        }
+      });
+    }
+  
+    addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseover", function () {
+      clearInterval(autoSlideInterval);
+    });
+  
+    addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseout", autoSlide);
+  
+    window.addEventListener("load", autoSlide);
+  
+    // Initial call to set the first slide as active
     updateSliderPos();
-  }
-  
-  heroSliderPrevBtn.addEventListener("click", slidePrev);
-  
-  /**
-   * auto slide
-   */
-  
-  let autoSlideInterval;
-  
-  const autoSlide = function () {
-    autoSlideInterval = setInterval(function () {
-      slideNext();
-    }, 10000);
-  }
-  
-  addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseover", function () {
-    clearInterval(autoSlideInterval);
-  });
-  
-  addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseout", autoSlide);
-  
-  window.addEventListener("load", autoSlide);
-  
+  } 
   
   
   /**
@@ -240,5 +246,27 @@ document.addEventListener("DOMContentLoaded", function() {
       startAutoSlide();
     }
 
+
+
+    // Handle navbar active class
+    var links = document.querySelectorAll('.navbar-link');
+    var currentURL = window.location.href;
+    var activeFound = false;
+
+    links.forEach(function(link) {
+      if (link.href === currentURL) {
+        link.classList.add('active');
+        activeFound = true;
+      } else {
+        link.classList.remove('active');
+      }
+    });
+
+    if (!activeFound) {
+      var defaultLink = document.querySelector('a[href="http://localhost/mtetemp/products/"]');
+      if (defaultLink) {
+        defaultLink.classList.add('active');
+      }
+    }
 
 });

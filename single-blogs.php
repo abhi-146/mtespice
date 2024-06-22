@@ -8,7 +8,7 @@ get_header();
     /* single-blog.css */
 
     body {
-        height: 250vh !important; 
+        height: 150vh !important; 
     }
 
 .single-post-content {

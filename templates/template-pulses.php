@@ -2150,6 +2150,16 @@ visibility: visible;
 }
 
 }
+
+@media (min-width: 768px) {
+  .hero{
+    min-height: 60vh;
+    max-height: 60vh;
+  }
+  .section-subtitle {
+    font-size: 25px;
+  }
+}
 </style>
 
 <main>

@@ -30,7 +30,7 @@ get_header(); ?>
      * COLORS
      */
 
-    --gold-crayola: rgb(72, 200, 160);
+    /* --gold-crayola: rgb(72, 200, 160);
     --quick-silver: hsla(0, 0%, 65%, 1);
     --davys-grey: hsla(30, 3%, 34%, 1);
     --smoky-black-1: hsla(40, 12%, 5%, 1);
@@ -45,7 +45,7 @@ get_header(); ?>
     --white-alpha-10: hsla(0, 0%, 100%, 0.1);
     --black: hsla(0, 0%, 0%, 1);
     --black-alpha-80: hsla(0, 0%, 0%, 0.8);
-    --black-alpha-15: hsla(0, 0%, 0%, 0.15);
+    --black-alpha-15: hsla(0, 0%, 0%, 0.15); */
 
     /**
      * GRADIENT COLOR
@@ -1034,20 +1034,20 @@ body.nav-active {
     left: 50%;
     transform: translateX(-50%);
     width: 140px;
-    background-image: url('../images/img-pattern.svg');
+    background-image: url('<?php echo $upload_dir['baseurl'] . '/images/img-pattern.svg'?>');
     background-repeat: repeat;
   }
   
   .about .abs-img-2::before {
     inset: 0;
-    background-image: url('../images/badge-2-bg.png');
+    background-image: url('<?php echo $upload_dir['baseurl'] . '/images/badge-2-bg.png'?>badge-2-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
     animation: rotate360 15s linear infinite;
   }
 
 .vision-parallax{
-    background: linear-gradient(109.6deg, rgb(72, 200, 160) 11.2%, rgb(32, 40, 48) 91.3%);
+    background: url('<?php echo $upload_dir['baseurl'] . '/images/vision_mission.png'?>');
     color: black;
     height: 400px;
     background-attachment: fixed;
@@ -1127,7 +1127,7 @@ body.nav-active {
     transform: translateX(-50%);
     width: 140px;
     height: 100%;
-    background-image: url('../images/img-pattern.svg');
+    background-image: url('<?php echo $upload_dir['baseurl'] . '/images/img-pattern.svg'?>');
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
@@ -1192,7 +1192,9 @@ body.nav-active {
     margin: 0 20px;
 }
 
-
+.label-2.section-subtitle{
+    font-size: 25px;
+}
 
 
 /*-----------------------------------*\
@@ -1287,7 +1289,6 @@ body.nav-active {
     }
 
     .vision-parallax{
-    background: linear-gradient(109.6deg, rgb(72, 200, 160) 11.2%, rgb(32, 40, 48) 91.3%);
     min-height: 150vh;
     background-attachment: fixed;
     background-position: center;
@@ -1557,7 +1558,6 @@ body.nav-active {
 
     
 .vision-parallax{
-    background: linear-gradient(109.6deg, rgb(72, 200, 160) 11.2%, rgb(32, 40, 48) 91.3%);
     color: black;
     height: 400px;
     background-attachment: fixed;
@@ -2017,6 +2017,15 @@ body.nav-active {
     }
 
 }
+
+@media (min-width: 768px) {
+
+
+  .hero{
+    min-height: 60vh;
+    max-height: 60vh;
+  }
+}
     </style>
 
 
@@ -2033,7 +2042,7 @@ body.nav-active {
         <li class="slider-item active" data-hero-slider-item>
 
             <div class="slider-bg">
-                <img src="<?php echo $upload_dir['baseurl'] . '/images/hr-slider-3.jpg'?>" width="1880" height="950" alt=""
+                <img src="<?php echo $upload_dir['baseurl'] . '/images/hr-slider-2.jpg'?>" width="1880" height="950" alt=""
                     class="img-cover">
             </div>
 
@@ -2046,7 +2055,7 @@ body.nav-active {
 
 
 
-            <a href="#" class="btn btn-primary slider-reveal">
+            <a href="#about" class="btn btn-primary slider-reveal">
                 <span class="text text-1">Explore Now</span>
 
                 <span class="text text-2" aria-hidden="true">Explore Now</span>
@@ -2073,10 +2082,7 @@ body.nav-active {
 
         <div class="about-content">
 
-            <p class="label-2 section-subtitle" id="about-label">We're here to make</p>
-
-            <img src="<?php echo $upload_dir['baseurl'] . '/images/food_taste_better.png'?>" width="297" height="294"
-                class="food_taste_better"></img>
+        <p class="label-2 section-subtitle" id="about-label">Our Story</p>
 
             <p class="section-text">
             Founded in 2005, our company has swiftly risen to become a $50 million enterprise, establishing itself as one of India's leading exporters. Our commitment to excellence and innovation has earned us a prominent place in the global market.
@@ -2279,7 +2285,7 @@ body.nav-active {
                 
             </div>
             <div class="certified">
-                <img src="<?php echo $upload_dir['baseurl'] . '/images/certificate-logo-5.png'?>" alt="Vision Icon">
+                <img src="<?php echo $upload_dir['baseurl'] . '/images/fieo-logo.svg'?>" alt="Vision Icon">
                 
             </div>
         </div>

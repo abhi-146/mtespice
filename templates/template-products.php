@@ -820,7 +820,7 @@ display: none;
 .hero {
 position: relative;
 padding-block: 120px;
-min-height: 100vh;
+min-height: 60vh;
 overflow: hidden;
 z-index: 1;
 }
@@ -1135,7 +1135,7 @@ position: static;
 }
 
 .section-container {
-height: 100vh;
+height: 60vh;
 width: 100%;
 display: flex;
 align-items: center;
@@ -2150,6 +2150,23 @@ visibility: visible;
 }
 
 }
+
+@media (min-width: 768px) {
+  .grid-list.below-hero {
+    grid-template-columns: repeat(3, 0.3fr);
+    position: relative;
+    left: 50px;
+  }
+
+  .hero{
+    min-height: 60vh;
+    max-height: 60vh;
+  }
+
+  .section-subtitle {
+    font-size: 25px;
+  }
+}
 </style>
 
 <main>
@@ -2205,61 +2222,88 @@ visibility: visible;
                         spices have various medicinal properties and hence used in the preparation of medicines from
                         ancient times. They are also used as as in ingredient in cosmetics and perfumes.</p>
 
-                        <ul class="grid-list">
-  
-    <li>
-        <a href="<?php echo esc_url(get_site_url() . '/spices'); ?>" class="event-card has-before hover:shine">
-            <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                <img src="<?php echo $upload_dir['baseurl'] . '/product_images/spices-collage.png'?>" width="350" height="450" loading="lazy" alt="<?php the_title_attribute(); ?>" class="img-cover">
-            </div>
-            <div class="card-content">
+                        <ul class="grid-list below-hero">
 
-                <h3 class="card-title title-2 text-center" style="margin: 20px;">
-                    <?php echo esc_html('Spices'); ?>
-                </h3>
-            </div>
-        </a>
-    </li>
+                          <li>
+                            <a href="<?php echo esc_url(get_site_url() . '/spices'); ?>" class="event-card has-before hover:shine">
+                              <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                                <img src="<?php echo $upload_dir['baseurl'] . '/product_images/spices-collage.png'; ?>" width="350" height="450" loading="lazy" alt="spices" class="img-cover">
+                              </div>
+                              <div class="card-content">
+                                <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                  Spices
+                                </h3>
+                              </div>
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="<?php echo esc_url(get_site_url() . '/all-pulses'); ?>" class="event-card has-before hover:shine">
+                              <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                                <img src="<?php echo $upload_dir['baseurl'] . '/images/photo-collage-pulses.png'; ?>" width="350" height="450" loading="lazy" alt="Pulses" class="img-cover">
+                              </div>
+                              <div class="card-content">
+                                <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                  Pulses
+                                </h3>
+                              </div>
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="<?php echo esc_url(get_site_url() . '/all-nuts'); ?>" class="event-card has-before hover:shine">
+                              <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                                <img src="<?php echo $upload_dir['baseurl'] . '/images/nuts-collage.png'; ?>" width="350" height="450" loading="lazy" alt="Nuts" class="img-cover">
+                              </div>
+                              <div class="card-content">
+                                <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                  Nuts
+                                </h3>
+                              </div>
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="<?php echo esc_url(get_site_url() . '/all-oil-seeds'); ?>" class="event-card has-before hover:shine">
+                              <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                                <img src="<?php echo $upload_dir['baseurl'] . '/images/oil-seeds-collage.png'; ?>" width="350" height="450" loading="lazy" alt="Oil seeds" class="img-cover">
+                              </div>
+                              <div class="card-content">
+                                <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                  Oil seeds
+                                </h3>
+                              </div>
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="<?php echo esc_url(get_site_url() . '/all-vegetables'); ?>" class="event-card has-before hover:shine">
+                              <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                                <img src="<?php echo $upload_dir['baseurl'] . '/images/vegetables-collage.png'; ?>" width="350" height="450" loading="lazy" alt="Vegetables" class="img-cover">
+                              </div>
+                              <div class="card-content">
+                                <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                  Vegetables
+                                </h3>
+                              </div>
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="<?php echo esc_url(get_site_url() . '/all-other-products'); ?>" class="event-card has-before hover:shine">
+                              <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                                <img src="<?php echo $upload_dir['baseurl'] . '/images/other-products-collage.png'; ?>" width="350" height="450" loading="lazy" alt="Other products" class="img-cover">
+                              </div>
+                              <div class="card-content">
+                                <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                  Others
+                                </h3>
+                              </div>
+                            </a>
+                          </li>
 
 
-    <li>
-        <a href="<?php echo esc_url(get_site_url() . '/all-pulses'); ?>" class="event-card has-before hover:shine">
-            <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                <img src="<?php echo $upload_dir['baseurl'] . '/images/photo-collage-pulses.png'?>" width="350" height="450" loading="lazy" alt="<?php the_title_attribute(); ?>" class="img-cover">
-            </div>
-            <div class="card-content">
 
-                <h3 class="card-title title-2 text-center" style="margin: 20px;">
-                    <?php echo esc_html('Pulses'); ?>
-                </h3>
-            </div>
-        </a>
-    </li>
-    <li>
-        <a href="<?php echo esc_url(get_site_url() . '/all-oil-seeds'); ?>" class="event-card has-before hover:shine">
-            <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                <img src="<?php echo $upload_dir['baseurl'] . '/images/oilseeds-collage.png'?>" width="350" height="450" loading="lazy" alt="<?php the_title_attribute(); ?>" class="img-cover">
-            </div>
-            <div class="card-content">
-                <h3 class="card-title title-2 text-center" style="margin: 20px;">
-                    <?php echo esc_html('Oil Seeds'); ?>
-                </h3>
-            </div>
-        </a>
-    </li>
-
-    <li>
-        <a href="<?php echo esc_url(get_site_url() . '/all-oil-seeds'); ?>" class="event-card has-before hover:shine">
-            <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                <img src="<?php echo $upload_dir['baseurl'] . '/images/oilseeds-collage.png'?>" width="350" height="450" loading="lazy" alt="<?php the_title_attribute(); ?>" class="img-cover">
-            </div>
-            <div class="card-content">
-                <h3 class="card-title title-2 text-center" style="margin: 20px;">
-                    <?php echo esc_html('Nuts'); ?>
-                </h3>
-            </div>
-        </a>
-    </li>
 </ul>
 
 

@@ -1,15 +1,14 @@
 <?php
-/*
-Template Name: Contact
-*/
- 
-$upload_dir = wp_upload_dir(); 
+//Single-nuts.php
+
+$upload_dir = wp_upload_dir();
 
 get_header(); ?>
 
 <style>
+
 /*-----------------------------------*\
-  #contact.css
+  #single-nuts.css
 \*-----------------------------------*/
 
 /**
@@ -30,7 +29,7 @@ get_header(); ?>
  * COLORS
  */
 
-/* --gold-crayola: #20a7db;
+--gold-crayola: #20a7db;
 --quick-silver: hsla(0, 0%, 65%, 1);
 --davys-grey: hsla(30, 3%, 34%, 1);
 --smoky-black-1: hsla(40, 12%, 5%, 1);
@@ -45,7 +44,7 @@ get_header(); ?>
 --white-alpha-10: hsla(0, 0%, 100%, 0.1);
 --black: hsla(0, 0%, 0%, 1);
 --black-alpha-80: hsla(0, 0%, 0%, 0.8);
---black-alpha-15: hsla(0, 0%, 0%, 0.15); */
+--black-alpha-15: hsla(0, 0%, 0%, 0.15);
 
 /**
  * GRADIENT COLOR
@@ -196,7 +195,7 @@ scroll-behavior: smooth;
 }
 
 body {
-background: linear-gradient(109.6deg, rgb(72, 200, 160) 11.2%, rgb(32, 40, 48) 91.3%);
+background-color: #fff;
 color: var(--white);
 font-family: var(--fontFamily-dm_sans);
 font-size: var(--fontSize-body-4);
@@ -952,164 +951,44 @@ animation-delay: 1.5s;
 animation-delay: 2s;
 }
 
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
+.main-content h2{
+    font-family: "Berkshire Swash", serif;
+    margin-top: 10px;
+    color: black;
+    padding: 15px;
+    text-align: left;
+}
 
+.main-content p {
+    color: black;
+    padding: 15px;
+    text-align: left;
+}
 
-.contact-container {
-    display: flex;
+table.specifications {
     width: 100%;
-    gap: 20px;
-    margin-top: 40px;
-    margin-bottom: 82px;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-.address-container {
-    display: flex;
-    width: 100%;
-    gap: 20px;
-    margin-top: 40px;
-    align-items: center;
-}
-
-
-.left-column, .right-column {
-    flex: 1;
-}
-
-iframe {
-  margin-top: 90px;
-    width: 100%;
-    height: 88%;
-    border-radius: 10px;
-}
-
-.contact-form {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.right-column h2 {
-  color: var(--white);
-  font-size: 40px;
-font-family: "Berkshire Swash", serif;
-font-weight: var(--weight-regular);
-line-height: var(--lineHeight-2);
-    padding: 20px;
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-form select {
-    width: 100%;
+table.specifications th, table.specifications td {
+    border: 1px solid #a3dd97;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+    text-align: left;
+    color: black;
 }
 
-.contact-form input[type="submit"] {
-    background: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.contact-form input[type="submit"]:hover {
-    background: #555;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-
-.section-address {
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px;
+table.specifications th {
+    background-color: #2c914e;
     color: #fff;
 }
 
-.address-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+table.specifications tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
-.left-address, .right-address {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    color: #000;
-}
-
-.left-address h2, .right-address h2 {
-    text-align: left;
-}
-
-.left-address p, .right-address p, .right-address ul {
-    text-align: left;
-}
-
-.right-address ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.right-address ul li {
-    margin: 5px 0;
-}
-
-/* Form css */
-.contact-form p{
-  height: 100px;
-    color: black;
-    position: relative;
-    bottom: 12px;
-    padding: 0;
-}
-.contact-form textarea{
-  height: 100%;
-}
-
-
-input[type="submit"]{
-  position: relative;
-  top: 45px;
-}
-
-
-@media (max-width: 768px) {
-    .contact-container {
-        flex-direction: column;
-    }
-
-    .address-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    iframe {
-  margin-top: 70px;
-    width: 100%;
-    height: 500px;
-    border: 0;
-}
+table.specifications tr:nth-child(odd) {
+    background-color: #e9f9e9;
 }
 
 /*-----------------------------------*\
@@ -1326,7 +1205,6 @@ iframe {
     height: 500px;
     border: 0;
 }
-
 
 }
 
@@ -1556,6 +1434,7 @@ iframe {
     color: #000;
     width: 682px;
 }
+
 
 
 /**
@@ -1959,106 +1838,143 @@ iframe {
   left: 0;
 }
 
-@media (min-width: 768px) {
-  .flag-number {
-    display: flex;
-    gap: 10px;
-  }
 
 
-  .hero{
-    min-height: 60vh;
-    max-height: 60vh;
-  
-}
 
 }
+
+.hero.single-template {
+    min-height: 12vh !important;
 }
+
+
 </style>
 
-
 <main>
-        <article>
+        <article?>
 
             <!-- 
         - #HERO
       -->
 
-            <section class="hero text-center" aria-label="home" id="home">
+<section class="hero text-center single-template" aria-label="home" id="home" style="max-height: 15vh;">
 
                 <ul class="hero-slider" data-hero-slider>
 
                     <li class="slider-item active" data-hero-slider-item>
 
                         <div class="slider-bg">
-                            <img src="<?php echo $upload_dir['baseurl'] . '/images/hr-slider-2.jpg'?>" width="1880" height="950" alt=""
-                                class="img-cover">
+                        <?php 
+                         echo get_the_post_thumbnail( get_the_ID(), 'full', array( 
+                        'alt' => '', 
+                        'class' => 'img-cover', 
+                        'width' => '1880', 
+                        'height' => '950' 
+                          ) ); 
+                        ?>
                         </div>
-
-                        <p class="label-2 section-subtitle slider-reveal">Get in Touch with Us</p>
-
                         <h1 class="display-1 hero-title slider-reveal">
-                            CONTACT US <br>
+                        <?php the_title(); ?>
                         </h1>
 
-                        <a href="#contact-us-container" class="btn btn-primary slider-reveal">
-                            <span class="text text-1">Connect Now</span>
 
-                            <span class="text text-2" aria-hidden="true">Connect Now</span>
-                        </a>
                     </li>
                 </ul>
             </section>
-            <section class="section-contact text-center" aria-labelledby="contact-label" id="">
-    <div id="contact-us-container" class="container">
-        <div class="contact-container">
-            <div class="left-column">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54890.398693318195!2d76.66811669427109!3d30.70012454091395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390feda045555555%3A0x58f1f0e3324e4f9e!2sUniversal%20Satellite%20Mapping%20Consultants%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1718212897161!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="right-column">
-                <h2>Contact Form</h2>
-                <div class="contact-form">
-                <?php
-                if (function_exists('do_shortcode')) {
-                    echo do_shortcode('[contact-form-7 id="00b5914" title="Connect With Us"]');
-                }
-                ?>
-                </div>
-            </div>
-        </div>
+
+            <section class="section-info text-center" aria-labelledby="contact-label" id="">
+    <div class="container">
+        <div class="main-content">
+            <h2>Overview of <?php the_title(); ?></h2>
+            <p><b><?php echo get_field('tagline'); ?></b></p>
+            <p><?php echo get_field('main_content'); ?></p>
+            <h4><b>NEW CROP: <?php echo get_field('new_corp'); ?></b><br>
+                <b>HSN CODE: <?php echo get_field('hsn_code'); ?></b>
+            </h4> 
+            <h2>Specifications:</h2>  
+            <table class="specifications">
+                <tr>
+                    <th>Properties</th>
+                    <th>Values & Limits</th>
+                </tr>
+                <tr>
+                    <td>Product Name</td>
+                    <td><?php echo get_field('product_name'); ?></td>
+                </tr>
+                <tr>
+                    <td>Counts Per Ounce</td>
+                    <td><?php echo get_field('count_per_ounce'); ?></td>
+                </tr>
+                <tr>
+                    <td>Moisture</td>
+                    <td><?php echo get_field('moisture'); ?></td>
+                </tr>
+                <tr>
+                    <td>Cleaning</td>
+                    <td><?php echo get_field('cleaning'); ?></td>
+                </tr>
+                <tr>
+                    <td>Oil Content</td>
+                    <td><?php echo get_field('oil_content'); ?></td>
+                </tr>
+                <tr>
+                    <td>Place of Origin</td>
+                    <td><?php echo get_field('place_of_origin'); ?></td>
+                </tr>
+                <tr>
+                    <td>Foreign Material</td>
+                    <td><?php echo get_field('foreign_material'); ?></td>
+                </tr>
+                <tr>
+                    <td>Aflatoxin</td>
+                    <td><?php echo get_field('aflatoxin'); ?></td>
+                </tr>
+                <tr>
+                    <td>Shape</td>
+                    <td><?php echo get_field('shape'); ?></td>
+                </tr>
+            </table>
+            <h2>Packaging details:</h2>  
+            <table class="specifications">
+                <tr>
+                    <th>TYPES OF BAGS</th>
+                    <th>QUANTITY</th>
+                </tr>
+                <tr>
+                    <td>Jute Bag</td>
+                    <td><?php echo get_field('jute_bag'); ?></td>
+                </tr>
+                <tr>
+                    <td> PP Bag</td>
+                    <td><?php echo get_field('pp_bag'); ?></td>
+                </tr>
+                <tr>
+                    <td> Vacuum Pack</td>
+                    <td><?php echo get_field('vacuum_pack'); ?></td>
+                </tr>
+            </table>
+            <h2>Container Capacity:</h2>
+            <table class="specifications">
+                <tr>
+                    <th>TYPE OF CONTAINER</th>
+                    <th>QUANTITY</th>
+                </tr>
+                <tr>
+                    <td> 20' FT Container </td>
+                    <td><?php echo get_field('20_ft_container'); ?></td>
+                </tr>
+                <tr>
+                    <td> 40' FT Container</td>
+                    <td><?php echo get_field('20_ft_container'); ?></td>
+                </tr>
+            </table>
+            <h2>Benefits and Uses:</h2>
+            <p><?php echo get_field('benefits_and_uses'); ?></p>
         </div>
     </div>
 </section>
 
-<section class="section-address" aria-labelledby="contact-label">
-    <div class="address-container">
-        <div class="left-address">
-            <h2>Corporate Head Office</h2>
-            <p>
-                MTE Exim Pvt Ltd<br>
-                19, Armenian Street, 4th Floor, Suite No 513,<br>
-                Kolkata – 700001, India<br>
-                <span class="flag-number"><img src="<?php echo $upload_dir['baseurl'] . '/images/India.svg'?>" alt="Indian Flag" style="width: 20px;"> Mobile : +91 97487 25155 </span>
-            </p>
-        </div>
-        <div class="right-address">
-            <h2>Branches</h2>
-            <p><strong>International Office:</strong></p>
-            <ul>
-                <li class="flag-number"><img src="<?php echo $upload_dir['baseurl'] . '/images/Bangladesh.svg'?>" alt="Bangladesh Flag" style="width: 20px;"> Asia: Dhaka, Bangladesh </li>
-                <li class="flag-number"><img src="<?php echo $upload_dir['baseurl'] . '/images/Sweden.svg'?>" alt="Sweden Flag" style="width: 20px;"> Europe: Nyodlingsvagen 4N, 191 40, Sollentuna, Sweden</li>
-            </ul>
-            <p><strong>India Branch Office:</strong></p>
-            <ul>
-                <li>Unjha (Gujarat)</li>
-                <li>Guntur (Andhra Pradesh)</li>
-                <li>Jaipur (Rajasthan)</li>
-            </ul>
-        </div>
-    </div>
-</section>
-          
+
 </article>
 </main>
 <?php get_footer(); ?>
-
