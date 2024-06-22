@@ -5,7 +5,7 @@
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 :root {
 
     /**
@@ -225,7 +225,7 @@
   .title-3,
   .title-4 {
     color: var(--white);
-    font-family: "Berkshire Swash", serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: var(--weight-regular);
     line-height: var(--lineHeight-2);
   }
@@ -364,6 +364,11 @@
     text-transform: uppercase;
     letter-spacing: var(--letterSpacing-2);
     margin-block-end: 12px;
+  }
+
+  .main-heading{
+    color: #fff;
+    text-shadow: 0 0 10px hsl(291, 71%, 38%), 0 0 20px hsl(291, 71%, 38%), 0 0 30px hsl(291, 71%, 38%); /* Glowing effect with hsl color */
   }
   
   .btn {

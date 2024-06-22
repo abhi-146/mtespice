@@ -72,7 +72,7 @@ get_header();
     <p class="label-2 section-subtitle slider-reveal">Unlocking Global Spice Treasures</p>
     <h1 class="display-1 hero-title slider-reveal">
       Discover exotic flavors <br>
-      with Mte Spice
+      with <span class="main-heading">Mte Spice</span>
     </h1>
     <a href="<?php echo get_site_url() . '/all-spices'; ?>" class="btn btn-primary slider-reveal">
       <span class="text text-1">Explore Now</span>
@@ -86,8 +86,8 @@ get_header();
     </div>
     <p class="label-2 section-subtitle slider-reveal">Unveiling the World of Pulses</p>
     <h1 class="display-1 hero-title slider-reveal">
-      Savor the richness of global pulses <br>
-      with Mte Spice
+      Savor the bounty of pulses <br>
+      with <span class="main-heading">Mte Spice</span>
     </h1>
     <a href="<?php echo get_site_url() . '/all-pulses'; ?>" class="btn btn-primary slider-reveal">
       <span class="text text-1">Explore Now</span>
@@ -102,8 +102,8 @@ get_header();
     </div>
     <p class="label-2 section-subtitle slider-reveal">Exploring Global Nut Delights</p>
     <h1 class="display-1 hero-title slider-reveal">
-      Indulge in the world's finest nuts <br>
-      with Mte Spice
+      Indulge in the finest nuts <br>
+      with <span class="main-heading">Mte Spice</span>
     </h1>
     <a href="<?php echo get_site_url() . '/all-nuts'; ?>" class="btn btn-primary slider-reveal">
       <span class="text text-1">Explore Now</span>
