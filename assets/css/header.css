@@ -60,7 +60,7 @@
     --fontSize-label-2: 1.4rem;
   
     /* font-weight */
-    --weight-regular: 400;
+    --weight-regular: 500;
     --weight-bold: 700;
   
     /* line-height */
@@ -367,8 +367,7 @@
   }
 
   .main-heading{
-    color: #fff;
-    text-shadow: 0 0 10px hsl(291, 71%, 38%), 0 0 20px hsl(291, 71%, 38%), 0 0 30px hsl(291, 71%, 38%); /* Glowing effect with hsl color */
+    color: var(--gold-crayola);
   }
   
   .btn {
