@@ -9,10 +9,40 @@ $hr_slider_pulses = $upload_dir['baseurl'] . '/images/hero-pulses.jpg';
 $hr_slider_nuts = $upload_dir['baseurl'] . '/images/hero-nuts.jpg';
 $img_pattern = $upload_dir['baseurl'] . '/images/img-pattern.svg';
 $badge2bg = $upload_dir['baseurl'] . '/images/img-pattern.svg';
+$parallax_image = $upload_dir['baseurl'] . '/images/parallax.jpg';
 get_header(); 
 ?>
 
 <style>
+
+.parallax {
+      background-image: url('<?php echo $parallax_image; ?>');
+      height: 400px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      z-index: -9999;
+    }
+
+    .parallax-content {
+      position: relative;
+      z-index: 2;
+      color: white;
+      text-align: center;
+      padding: 200px 20px;
+
+    }
+
+    .parallax-content h2 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    .parallax-content p {
+      font-size: 1.5rem;
+    }
   
   .service-card .has-before::before {
     top: 0;
@@ -133,11 +163,12 @@ get_header();
 
         <p class="section-subtitle label-2">Flavors For Royalty</p>
 
-        <h2 class="headline-1 section-title" style="color: black">We Offer Premium Spices, Pulses, and Nuts</h2>
+        <h2 class="headline-1 section-title" style="color: black">We Offer Premium Spices, Pulses, Nuts, Oil Seeds, and Vegetables</h2>
 
-        <p class="section-text" style="color: black">
-          Discover the rich, aromatic, and flavorful world of spices, pulses, and nuts. Our products come from the best farms and are carefully processed to bring you the highest quality and taste.
-        </p>
+<p class="section-text" style="color: black">
+  Discover the rich, aromatic, and flavorful world of spices, pulses, nuts, oil seeds, and vegetables. Our products come from the best farms and are carefully processed to bring you the highest quality and taste. We provide exceptional support to ensure your satisfaction with our premium offerings.
+</p>
+
 
 
           <ul class="grid-list below-hero">
@@ -237,7 +268,7 @@ get_header();
       <!-- Parallax Section -->
       <section class="parallax">
         <div class="parallax-content">
-          <h1 style="font-size: 40px; font-family: 'Berkshire Swash', serif;">Global Exporters of Premium Quality Spices, Pulses and Nuts</h1>
+          <h1 style="font-size: 40px; font-family: 'Berkshire Swash', serif;">Global Exporters of Premium Quality Spices, Pulses, Nuts, Oil Seeds, and Vegetables</h1>
         </div>
       </section>
 
@@ -255,7 +286,7 @@ get_header();
             <h2 class="headline-1 section-title">Leading the Spice Export Industry</h2>
 
             <p class="section-text">
-            MTE EXIM PRIVATE LIMITED, established in 2005, has rapidly grown to become a leading exporter of spices in India. With a commitment to quality and excellence, the company has achieved remarkable success, boasting a turnover of $50 million. Renowned for its premium spices, MTE EXIM PRIVATE LIMITED continues to set the benchmark in the industry, delivering the rich flavors of India to markets worldwide.
+            MTE EXIM PRIVATE LIMITED, established in 2005, has rapidly grown to become a leading exporter of spices in India. With a commitment to quality and excellence, the company has achieved remarkable success, boasting a turnover of $60 million. Renowned for its premium spices, MTE EXIM PRIVATE LIMITED continues to set the benchmark in the industry, delivering the rich flavors of India to markets worldwide.
             </p>
 
             <a href="<?php echo site_url(); ?>/about" class="btn btn-primary">
@@ -278,46 +309,6 @@ get_header();
           </figure>
 
         </div>
-      </section>
-
-      <!-- 
-        - #SPECIAL DISH
-      -->
-
-      <section class="special-dish text-center" aria-labelledby="dish-label">
-
-        <div class="special-dish-banner">
-          <img src="<?php echo $upload_dir['baseurl'] . '/images/red_chilli.png'?>" width="940" height="900" loading="lazy" alt="special dish"
-            class="img-cover">
-        </div>
-
-        <div class="special-dish-content bg-black-10">
-          <div class="container">
-
-            <img src="<?php echo $upload_dir['baseurl'] . '/images/badge-1.png'?>" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
-
-            <p class="section-subtitle label-2">Special Spice</p>
-
-            <h2 class="headline-1 section-title" style="color: black;">Red Chilli</h2>
-
-            <p class="section-text" style="color: black;">
-              Red Chilli is known for its vibrant color and spicy flavor. It is a key ingredient in many cuisines worldwide, adding heat and enhancing the taste of dishes. Whether used fresh, dried, or powdered, red chilli brings a fiery kick to your meals.
-            </p>
-
-
-            <a href="<?php echo site_url(); ?>/products" class="btn btn-primary">
-              <span class="text text-1">View More</span>
-
-              <span class="text text-2" aria-hidden="true">View More</span>
-            </a>
-
-          </div>
-        </div>
-
-        <img src="<?php echo $upload_dir['baseurl'] . '/images/shape-4.png'?>" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
-
-        <img src="<?php echo $upload_dir['baseurl'] . '/images/shape-9.png'?>" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
-
       </section>
 
 
@@ -468,35 +459,38 @@ get_header();
           <div class="testi-content">
             <div class="slides">
 
-              <div class="slide">
-                <img src="<?php echo $upload_dir['baseurl'] . '/images/hasan.png'?>" alt="" class="image" />
-                <p>They have been our go-to spice supplier for years and we have never been disappointed.</p>
-                <i class='bx bxs-quote-alt-left quote-icon'></i>
-                <div class="details">
-                  <p class="name">Mr. Hassan</p>
-                  <p class="name">Trader in Dubai</p>
-                </div>
-              </div>
+            <div class="slide">
+  <img src="<?php echo $upload_dir['baseurl'] . '/images/thomas.png'?>" alt="" class="image" />
+  <p>MTEspice has been our trusted supplier for years. Their spices are always fresh and aromatic.</p>
+  <i class='bx bxs-quote-alt-left quote-icon'></i>
+  <div class="details">
+    <p class="name">Mr. Thomas Müller</p>
+    <p class="name">European Gourmet Chef</p>
+  </div>
+</div>
 
-              <div class="slide">
-                <img src="<?php echo $upload_dir['baseurl'] . '/images/Julie.png'?>" alt="" class="image" />
-                <p>We never looked back after associating with Suman Exports. Their quality and service is consistent.</p>
-                <i class='bx bxs-quote-alt-left quote-icon'></i>
-                <div class="details">
-                  <p class="name">Mrs. Julie</p>
-                  <p class="name">South American Food Processor</p>
-                </div>
-              </div>
+<div class="slide">
+  <img src="<?php echo $upload_dir['baseurl'] . '/images/elena.png'?>" alt="" class="image" />
+  <p>The quality and consistency of MTEspice's spices have greatly enhanced our dishes. We highly recommend them.</p>
+  <i class='bx bxs-quote-alt-left quote-icon'></i>
+  <div class="details">
+    <p class="name">Mrs. Elena Rossi</p>
+    <p class="name">Italian Restaurant Owner</p>
+  </div>
+</div>
 
-              <div class="slide">
-                <img src="<?php echo $upload_dir['baseurl'] . '/images/Stuart.png'?>" alt="" class="image" />
-                <p>We never looked back after associating with Suman Exports. Their quality and service is consistent.</p>
-                <i class='bx bxs-quote-alt-left quote-icon'></i>
-                <div class="details">
-                  <p class="name">Mr. Stuart Patrick</p>
-                  <p class="name">Canada Hypermarket chain owner</p>
-                </div>
-              </div>
+
+<div class="slide">
+  <img src="<?php echo $upload_dir['baseurl'] . '/images/budi.png'?>" alt="" class="image" />
+  <p>MTEspice provides spices of the highest quality, which has greatly benefited our business.</p>
+  <i class='bx bxs-quote-alt-left quote-icon'></i>
+  <div class="details">
+    <p class="name">Mr. Budi Santoso</p>
+    <p class="name">Food Distributor in Indonesia</p>
+  </div>
+</div>
+
+
 
 
             <!-- Navigation controls -->

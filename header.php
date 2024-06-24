@@ -1,7 +1,6 @@
 <?php 
 // Get the uploads directory info
 $upload_dir = wp_upload_dir();
-$parallax_image = $upload_dir['baseurl'] . '/images/parallax.jpg';
 ?>
 
 <html <?php language_attributes(); ?>>
@@ -31,40 +30,6 @@ $parallax_image = $upload_dir['baseurl'] . '/images/parallax.jpg';
   
   <link rel="shortcut icon" href="" type="image/svg+xml">
 
-
-
-  <!-- /* Custom CSS for parallax effect */ -->
-
-  <style>
-    .parallax {
-      background-image: url('<?php echo $parallax_image; ?>');
-      height: 400px;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      z-index: -9999;
-    }
-
-    .parallax-content {
-      position: relative;
-      z-index: 2;
-      color: white;
-      text-align: center;
-      padding: 200px 20px;
-
-    }
-
-    .parallax-content h2 {
-      margin: 0;
-      font-size: 3rem;
-    }
-
-    .parallax-content p {
-      font-size: 1.5rem;
-    }
-  </style> 
 
 </head>
 <body <?php body_class(); ?> id="top">
