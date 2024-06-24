@@ -2040,20 +2040,21 @@ iframe {
                 Kolkata – 700001, India<br>
                 <span class="flag-number"><img src="<?php echo $upload_dir['baseurl'] . '/images/India.svg'?>" alt="Indian Flag" style="width: 20px;"> Mobile : +91 97487 25155 </span>
             </p>
-        </div>
-        <div class="right-address">
-            <h2>Branches</h2>
-            <p><strong>International Office:</strong></p>
-            <ul>
-                <li class="flag-number"><img src="<?php echo $upload_dir['baseurl'] . '/images/Bangladesh.svg'?>" alt="Bangladesh Flag" style="width: 20px;"> Asia: Dhaka, Bangladesh </li>
-                <li class="flag-number"><img src="<?php echo $upload_dir['baseurl'] . '/images/Sweden.svg'?>" alt="Sweden Flag" style="width: 20px;"> Europe: Nyodlingsvagen 4N, 191 40, Sollentuna, Sweden</li>
-            </ul>
             <p><strong>India Branch Office:</strong></p>
             <ul>
                 <li>Unjha (Gujarat)</li>
                 <li>Guntur (Andhra Pradesh)</li>
                 <li>Jaipur (Rajasthan)</li>
             </ul>
+        </div>
+        <div class="right-address">
+            <h2>Branches</h2>
+            <p><strong>International Office:</strong></p>
+            <ul>
+                <li class="flag-number"><img src="<?php echo $upload_dir['baseurl'] . '/images/Bangladesh.svg'?>" alt="Bangladesh Flag" style="width: 20px;"> <br>Asia: Dhaka<br>Bangladesh </li>
+                <li class="flag-number"><img src="<?php echo $upload_dir['baseurl'] . '/images/Sweden.svg'?>" alt="Sweden Flag" style="width: 20px;"> <br>Europe: Nyodlingsvagen 4N, 191 40, Sollentuna <br> Sweden</li>
+            </ul>
+            
         </div>
     </div>
 </section>

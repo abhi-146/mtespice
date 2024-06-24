@@ -161,14 +161,17 @@ get_header();
       <section class="section service bg-black-10 text-center" aria-label="service">
         <div class="container">
 
-        <p class="section-subtitle label-2">Flavors For Royalty</p>
+        <div class="grid-list-left">
+          <p class="section-subtitle label-2">Flavors For Royalty</p>
 
-        <h2 class="headline-1 section-title" style="color: black">We Offer Premium Spices, Pulses, Nuts, Oil Seeds, and Vegetables</h2>
+          <h2 class="headline-1 section-title" style="color: black">We Offer Premium Spices, Pulses, Nuts, Oil Seeds, and Vegetables</h2>
 
-<p class="section-text" style="color: black">
-  Discover the rich, aromatic, and flavorful world of spices, pulses, nuts, oil seeds, and vegetables. Our products come from the best farms and are carefully processed to bring you the highest quality and taste. We provide exceptional support to ensure your satisfaction with our premium offerings.
-</p>
+          <p class="section-text" style="color: black">
+            Discover the rich, aromatic, and flavorful world of spices, pulses, nuts, oil seeds, and vegetables. Our products come from the best farms and are carefully processed to bring you the highest quality and taste. We provide exceptional support to ensure your satisfaction with our premium offerings.
+          </p>
+      </div>
 
+     
 
 
           <ul class="grid-list below-hero">
@@ -460,22 +463,23 @@ get_header();
             <div class="slides">
 
             <div class="slide">
+  <img src="<?php echo $upload_dir['baseurl'] . '/images/leiwei.jpg'?>" alt="" class="image" />
+  <p>MTEspice has been a crucial partner for us. Their spices consistently meet our high standards, helping us deliver exceptional products to our customers.</p>
+  <i class='bx bxs-quote-alt-left quote-icon'></i>
+  <div class="details">
+    <p class="name">Ms. Li Wei</p>
+    <p class="name">Restaurant Owner in Beijing, China</p>
+  </div>
+</div>
+
+
+            <div class="slide">
   <img src="<?php echo $upload_dir['baseurl'] . '/images/thomas.png'?>" alt="" class="image" />
   <p>MTEspice has been our trusted supplier for years. Their spices are always fresh and aromatic.</p>
   <i class='bx bxs-quote-alt-left quote-icon'></i>
   <div class="details">
     <p class="name">Mr. Thomas Müller</p>
     <p class="name">European Gourmet Chef</p>
-  </div>
-</div>
-
-<div class="slide">
-  <img src="<?php echo $upload_dir['baseurl'] . '/images/elena.png'?>" alt="" class="image" />
-  <p>The quality and consistency of MTEspice's spices have greatly enhanced our dishes. We highly recommend them.</p>
-  <i class='bx bxs-quote-alt-left quote-icon'></i>
-  <div class="details">
-    <p class="name">Mrs. Elena Rossi</p>
-    <p class="name">Italian Restaurant Owner</p>
   </div>
 </div>
 
@@ -487,6 +491,37 @@ get_header();
   <div class="details">
     <p class="name">Mr. Budi Santoso</p>
     <p class="name">Food Distributor in Indonesia</p>
+  </div>
+</div>
+
+<div class="slide">
+  <img src="<?php echo $upload_dir['baseurl'] . '/images/Supachai.png'?>" alt="" class="image" />
+  <p>We are delighted with MTEspice's products. Their spices have enhanced the flavors of our dishes, making our restaurant a favorite among locals and tourists alike.</p>
+  <i class='bx bxs-quote-alt-left quote-icon'></i>
+  <div class="details">
+    <p class="name">Mr. Supachai Phanom</p>
+    <p class="name">Restaurant Owner in Bangkok, Thailand</p>
+  </div>
+</div>
+
+<div class="slide">
+  <img src="<?php echo $upload_dir['baseurl'] . '/images/khalid.png'?>" alt="" class="image" />
+  <p>We rely on MTEspice for their exceptional spices, which we import to serve our discerning clientele. Their products consistently meet our stringent standards.</p>
+  <i class='bx bxs-quote-alt-left quote-icon'></i>
+  <div class="details">
+    <p class="name">Mr. Khalid Al Mansoori</p>
+    <p class="name">Spice Importer in Dubai, UAE</p>
+  </div>
+</div>
+
+
+<div class="slide">
+  <img src="<?php echo $upload_dir['baseurl'] . '/images/elena.png'?>" alt="" class="image" />
+  <p>The quality and consistency of MTEspice's spices have greatly enhanced our dishes. We highly recommend them.</p>
+  <i class='bx bxs-quote-alt-left quote-icon'></i>
+  <div class="details">
+    <p class="name">Mrs. Elena James</p>
+    <p class="name">USA Restaurant Owner</p>
   </div>
 </div>
 

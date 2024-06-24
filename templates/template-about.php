@@ -1177,7 +1177,9 @@ body.nav-active {
     gap: 30px;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     margin: 50px;
+    flex-wrap: wrap;
   }
 
   .certified {
@@ -2085,8 +2087,23 @@ body.nav-active {
         <p class="label-2 section-subtitle" id="about-label">Our Story</p>
 
             <p class="section-text">
-            Founded in 2005, our company has swiftly risen to become a $50 million enterprise, establishing itself as one of India's leading exporters. Our commitment to excellence and innovation has earned us a prominent place in the global market.
-            Our company thrives under the visionary leadership of Mr. Suman Jaiswal and Mrs. Jayeeti Jaiswal, both of whom are young, dynamic, and committed to driving our success forward. Their robust educational backgrounds and forward-thinking vision have been instrumental in shaping our strategic direction. Complementing their leadership, Mr. Manish Joshi, our Export Head, exemplifies dedication and expertise. With his extensive experience, profound product knowledge, and approachable demeanor, he plays a crucial role in maintaining our high standards and ensuring customer satisfaction. Together, our leadership and team are dedicated to fostering innovation, excellence, and growth in the global export market.    
+            Founded in 2005, our company has rapidly grown into a $60 million enterprise, solidifying its position as one of India's foremost exporters. Our dedication to excellence and innovation has earned us the prestigious 3-star export house ranking certificate from the Government of India. This accolade highlights our commitment to maintaining high standards and delivering exceptional products to global markets.
+<br>
+<strong>The Journey of Quality Excellence:</strong>
+<br>
+
+Our journey began with humble origins and a relentless focus on quality. In our early years, we faced challenges in ensuring consistent product quality that met international standards. Recognizing the pivotal role of quality in our success, we embarked on a transformative journey.
+<br>
+
+Driven by our leadership team, led by Mr. Suman Jaiswal and Mrs. Jayeeti Jaiswal, we instituted rigorous quality control measures across our operations. This included enhancing our sourcing processes, upgrading our manufacturing facilities, and investing in training programs for our workforce.
+<br>
+
+Mr. Manish Joshi, our esteemed Export Head, played a pivotal role in this transformation. With his wealth of experience and deep product knowledge, he spearheaded initiatives to streamline our production processes and implement stringent quality checks. His leadership ensured that every product bearing our name met the highest standards of quality and reliability.
+<br>
+
+Today, our company stands as a testament to the power of perseverance and commitment to quality. Our products are trusted by customers worldwide, reflecting our unwavering dedication to excellence. As we continue to grow, innovation remains at the heart of our operations, driving us to explore new horizons and exceed customer expectations.
+
+   
         </p>
 
 
@@ -2115,29 +2132,30 @@ body.nav-active {
     <div class="vision-content">
         <h1>OUR MISSION, VISION & VALUES</h1>
         <div class="container-vision">
-            <div class="item">
-                <img src="<?php echo $upload_dir['baseurl'] . '/images/target.png'?>" alt="Mission Icon">
-                <div class="content">
-                    <h2>OUR MISSION</h2>
-                    <p>To cultivate, manufacture, process and serve best in class food retaining freshness
-                        and hygiene, fit for daily consumption.</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="<?php echo $upload_dir['baseurl'] . '/images/vision.png'?>" alt="Vision Icon">
-                <div class="content">
-                    <h2>OUR VISION</h2>
-                    <p>A globally recognized food company nourishing every day routine.</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="<?php echo $upload_dir['baseurl'] . '/images/value.png'?>" alt="Vision Icon">
-                <div class="content">
-                    <h2>OUR VALUES</h2>
-                    <p>A globally recognized food company nourishing every day routine.</p>
-                </div>
-            </div>
+    <div class="item">
+        <img src="<?php echo $upload_dir['baseurl'] . '/images/target.png'?>" alt="Mission Icon">
+        <div class="content">
+            <h2>OUR MISSION</h2>
+            <p>To cultivate, manufacture, process and serve best in class food retaining freshness
+                and hygiene, fit for daily consumption.</p>
         </div>
+    </div>
+    <div class="item">
+        <img src="<?php echo $upload_dir['baseurl'] . '/images/vision.png'?>" alt="Vision Icon">
+        <div class="content">
+            <h2>OUR VISION</h2>
+            <p>To be a globally recognized leader in the food industry, known for our commitment to quality, innovation, and sustainability.</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="<?php echo $upload_dir['baseurl'] . '/images/value.png'?>" alt="Values Icon">
+        <div class="content">
+            <h2>OUR VALUES</h2>
+            <p>Integrity, quality, customer focus, and sustainability are the core values that guide our business practices and relationships.</p>
+        </div>
+    </div>
+</div>
+
     </div>
 
 </section>
@@ -2152,100 +2170,66 @@ body.nav-active {
         <h2 class="headline-1 section-title" style="color: black">Management</h2>
 
         <p class="section-text" style="color: black">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been
-            the industrys
-            standard dummy text ever.
-        </p>
+        Under the leadership of Mr. Suman Jaiswal and Mrs. Jayeeti Jaiswal, our visionary founders, and with Mr. Manish Joshi, our dedicated Export Head, we prioritize innovation and excellence. Their leadership drives our commitment to delivering quality products and ensuring customer satisfaction.
+    </p>
 
         <ul class="grid-list">
-            <li>
-                <div class="service-card">
+        <li>
+    <div class="service-card">
+        <a class="has-before hover:shine">
+            <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                <img src="<?php echo $upload_dir['baseurl'] . '/images/avatar.png'?>" width="285" height="336" loading="lazy" alt="Breakfast" class="img-cover">
+            </figure>
+        </a>
+        <div class="card-content">
+            <h3 class="btn-text card-title">
+                <p>Suman Jaiswal - Managing Director</p>
+            </h3>
+            <p class="card-title" style="color: black">Master in Commerce, Calcutta University</p>
+            <p class="card-title" style="color: black; text-align: justify;">
+                Suman Jaiswal brings a wealth of expertise and innovative vision to our company. With a strong foundation in commerce, he has been instrumental in steering the company towards new heights, leveraging his strategic insights and leadership to drive growth and excellence. His unwavering commitment to quality sets the benchmark for our operations.
+            </p>
+        </div>
+    </div>
+</li>
 
-                    <a class="has-before hover:shine">
-                        <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                            <img src="<?php echo $upload_dir['baseurl'] . '/images/avatar.png'?>" width="285" height="336" loading="lazy"
-                                alt="Breakfast" class="img-cover">
-                        </figure>
-                    </a>
+<li>
+    <div class="service-card">
+        <a class="has-before hover:shine">
+            <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                <img src="<?php echo $upload_dir['baseurl'] . '/images/avatar.png'?>" width="285" height="336" loading="lazy" alt="Breakfast" class="img-cover">
+            </figure>
+        </a>
+        <div class="card-content">
+            <h3 class="btn-text card-title">
+                <p>Jayeeti Jaiswal - Managing Director</p>
+            </h3>
+            <p class="card-title" style="color: black">Bachelor in Commerce, Calcutta University</p>
+            <p class="card-title" style="color: black; text-align: justify;">
+                Jayeeti Jaiswal combines her strong academic background in commerce with a keen business acumen. Her leadership is characterized by a commitment to operational excellence and a focus on fostering innovation and growth within the company. She is dedicated to enhancing customer satisfaction and expanding our global footprint.
+            </p>
+        </div>
+    </div>
+</li>
+<li>
+    <div class="service-card">
+        <a class="has-before hover:shine">
+            <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                <img src="<?php echo $upload_dir['baseurl'] . '/images/Manish_Joshi.png'?>" width="285" height="336" loading="lazy" alt="Breakfast" class="img-cover">
+            </figure>
+        </a>
+        <div class="card-content">
+            <h3 class="btn-text card-title">
+                <p>Manish Joshi - Managing Director</p>
+            </h3>
+            <p class="card-title" style="color: black">BIT, Manipal Academy of Higher Education<br>Bachelor in Commerce (HONS.), Calcutta University</p>
+            <p class="card-title" style="color: black; text-align: justify;">
+                Manish Joshi's dual expertise in technology and commerce drives our export operations. His dedication to quality and his innovative approach to problem-solving ensure that our products meet the highest standards, maintaining our reputation in the global market.
+            </p>
+        </div>
+    </div>
+</li>
 
-                    <div class="card-content">
-
-                        <h3 class="btn-text card-title">
-                            <p>Anil Vaniya - Managing Directort</p>
-                        </h3>
-
-                        <p class="card-title" style="color: black">Master of Business Administration(MBA)
-                            GTU University, Gujarat</p>
-                        <p class="card-title" style="color: black; text-align: justify;">Anil Vaniya extensive business shrewdness
-                            is an upshot of the start he had in the field of Import and export. With the
-                            passage of time, he moved up the ladder and expanded his diligence in exploring,
-                            and developing new business opportunities in the overseas market space. His
-                            ability to easily comprehend, identify, communicate, and coordinate with
-                            overseas buyers and build business relationship add varies value-based
-                            strategies to VAD Industries Pvt. Ltd. business model.</p>
-                    </div>
-
-                </div>
-            </li>
-
-            <li>
-                <div class="service-card">
-
-                    <a class="has-before hover:shine">
-                        <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                            <img src="<?php echo $upload_dir['baseurl'] . '/images/avatar.png'?>" width="285" height="336" loading="lazy"
-                                alt="Breakfast" class="img-cover">
-                        </figure>
-                    </a>
-
-                    <div class="card-content">
-
-                        <h3 class="btn-text card-title">
-                            <p>Anil Vaniya - Managing Directort</p>
-                        </h3>
-
-                        <p class="card-title" style="color: black">Master of Business Administration(MBA)
-                            GTU University, Gujarat</p>
-                        <p class="card-title" style="color: black; text-align: justify;">Anil Vaniya extensive business shrewdness
-                            is an upshot of the start he had in the field of Import and export. With the
-                            passage of time, he moved up the ladder and expanded his diligence in exploring,
-                            and developing new business opportunities in the overseas market space. His
-                            ability to easily comprehend, identify, communicate, and coordinate with
-                            overseas buyers and build business relationship add varies value-based
-                            strategies to VAD Industries Pvt. Ltd. business model.</p>
-                    </div>
-
-                </div>
-            </li>
-            <li>
-                <div class="service-card">
-
-                    <a class="has-before hover:shine">
-                        <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                            <img src="<?php echo $upload_dir['baseurl'] . '/images/avatar.png'?>" width="285" height="336" loading="lazy"
-                                alt="Breakfast" class="img-cover">
-                        </figure>
-                    </a>
-
-                    <div class="card-content">
-
-                        <h3 class="btn-text card-title">
-                            <p>Anil Vaniya - Managing Directort</p>
-                        </h3>
-
-                        <p class="card-title" style="color: black">Master of Business Administration(MBA)
-                            GTU University, Gujarat</p>
-                        <p class="card-title" style="color: black; text-align: justify;">Anil Vaniya extensive business shrewdness
-                            is an upshot of the start he had in the field of Import and export. With the
-                            passage of time, he moved up the ladder and expanded his diligence in exploring,
-                            and developing new business opportunities in the overseas market space. His
-                            ability to easily comprehend, identify, communicate, and coordinate with
-                            overseas buyers and build business relationship add varies value-based
-                            strategies to VAD Industries Pvt. Ltd. business model.</p>
-                    </div>
-
-                </div>
-            </li>
 
         </ul>
 
@@ -2285,7 +2269,7 @@ body.nav-active {
                 
             </div>
             <div class="certified">
-                <img src="<?php echo $upload_dir['baseurl'] . '/images/fieo-logo.svg'?>" alt="Vision Icon">
+                <img src="<?php echo $upload_dir['baseurl'] . '/images/fieo-logo.png'?>" alt="Vision Icon">
                 
             </div>
         </div>

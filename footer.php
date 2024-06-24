@@ -43,7 +43,9 @@ $footer_pattern_image = $upload_dir['baseurl'] . '/images/footer-form-pattern.sv
                 MTE Exim Pvt Ltd<br>
                 19, Armenian Street, 4th Floor, Suite No 513,<br>
                 Kolkata – 700001, India<br>
-                Mobile : +91 97487 25155 
+                Mobile : +91 97487 25155 <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                +91 7003894644
             </p>
           </address>
 
