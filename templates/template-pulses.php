@@ -2217,56 +2217,283 @@ visibility: visible;
 
                         <ul class="grid-list">
 
-<?php
-// Query custom post type 'pulses'
-$pulses_query = new WP_Query(array(
-    'post_type' => 'pulses',
-    'posts_per_page' => -1 
-));
+                        <li>
+                            <div class="event-card has-before hover:shine">
 
-if ($pulses_query->have_posts()) {
-    while ($pulses_query->have_posts()) {
-        $pulses_query->the_post();
-        
-        // Get the featured image URL
-        $featured_image = get_the_post_thumbnail_url(get_the_ID(), 'full');
-        
-        // Get the permalink URL
-        $permalink = get_permalink();
-        
-        // Get the custom field 'icon_image' (if needed)
-        // $icon_image = get_field('icon_image');
-        ?>
-        <li>
-            <a href="<?php echo esc_url($permalink); ?>" class="event-card has-before hover:shine">
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                    <img src="<?php echo esc_url($featured_image); ?>" width="350" height="450"
-                        loading="lazy" alt="<?php the_title_attribute(); ?>"
-                        class="img-cover">
-                </div>
+                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                                    <img src="./assets/product_images/chillies.jpg" width="350" height="450"
+                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
+                                        class="img-cover">
+                                </div>
 
-                <div class="card-content">
-                    <div class="card-icon">
-                        <!-- <img src="<?php // echo esc_url($icon_image); ?>" width="100" height="80"
-                            loading="lazy" alt="icon"> -->
-                    </div>
+                                <div class="card-content">
+                                    <div class="card-icon">
+                                        <img src="./assets/product_images/chilli-pepper.png" width="100" height="80"
+                                            loading="lazy" alt="icon">
+                                    </div>
 
-                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
-                        <?php the_title(); ?>
-                    </h3>
-                </div>
-            </a>
-        </li>
-        <?php
-    }
-    wp_reset_postdata();
-} else {
-    // No posts found
-    echo '<p>No pulses found.</p>';
-}
-?>
+                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                        Dry Chillies
+                                    </h3>
+                                </div>
 
-</ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="event-card has-before hover:shine">
+
+                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                                    <img src="./assets/product_images/cumin seed.jpg" width="350" height="450"
+                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
+                                        class="img-cover">
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="card-icon">
+                                        <img src="./assets/product_images/cumin seed.png" width="100" height="80"
+                                            loading="lazy" alt="icon">
+                                    </div>
+
+                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                        Cumin Seeds
+                                    </h3>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="event-card has-before hover:shine">
+
+                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                                    <img src="./assets/product_images/fennel.jpg" width="350" height="450"
+                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
+                                        class="img-cover">
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="card-icon">
+                                        <img src="./assets/product_images/fennel.png" width="100" height="80"
+                                            loading="lazy" alt="icon">
+                                    </div>
+
+                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                        Fennel Seeds
+                                    </h3>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="event-card has-before hover:shine">
+
+                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                                    <img src="./assets/product_images/turmeric.jpg" width="350" height="450"
+                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
+                                        class="img-cover">
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="card-icon">
+                                        <img src="./assets/product_images/turmeric.png" width="100" height="80"
+                                            loading="lazy" alt="icon">
+                                    </div>
+
+                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                        Turmeric
+                                    </h3>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="event-card has-before hover:shine">
+
+                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                                    <img src="./assets/product_images/ajwain.jpg" width="350" height="450"
+                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
+                                        class="img-cover">
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="card-icon">
+                                        <img src="./assets/product_images/ajwain.png" width="100" height="80"
+                                            loading="lazy" alt="icon">
+                                    </div>
+
+                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                        Ajwain
+                                    </h3>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="event-card has-before hover:shine">
+
+                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                                    <img src="./assets/product_images/fenugreek.jpg" width="350" height="450"
+                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
+                                        class="img-cover">
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="card-icon">
+                                        <img src="./assets/product_images/fenugreek.png" width="100" height="80"
+                                            loading="lazy" alt="icon">
+                                    </div>
+
+                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                        Fenugreek
+                                    </h3>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="event-card has-before hover:shine">
+
+                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                                    <img src="./assets/product_images/dill_seed.jpg" width="350" height="450"
+                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
+                                        class="img-cover">
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="card-icon">
+                                        <img src="./assets/product_images/dill_seed.png" width="100" height="80"
+                                            loading="lazy" alt="icon">
+                                    </div>
+
+                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                        Dill Seeds
+                                    </h3>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="event-card has-before hover:shine">
+
+                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                                    <img src="./assets/product_images/cardamom.jpg" width="350" height="450"
+                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
+                                        class="img-cover">
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="card-icon">
+                                        <img src="./assets/product_images/cardamom.png" width="100" height="80"
+                                            loading="lazy" alt="icon">
+                                    </div>
+
+                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                        Cardamom
+                                    </h3>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="event-card has-before hover:shine">
+
+                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                                    <img src="./assets/product_images/garlic.jpg" width="350" height="450"
+                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
+                                        class="img-cover">
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="card-icon">
+                                        <img src="./assets/product_images/garlic.png" width="100" height="80"
+                                            loading="lazy" alt="icon">
+                                    </div>
+
+                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                        Garlic
+                                    </h3>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="event-card has-before hover:shine">
+
+                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                                    <img src="./assets/product_images/nutmeg.jpg" width="350" height="450"
+                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
+                                        class="img-cover">
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="card-icon">
+                                        <img src="./assets/product_images/nutmeg.png" width="100" height="80"
+                                            loading="lazy" alt="icon">
+                                    </div>
+
+                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                        Nutmeg
+                                    </h3>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="event-card has-before hover:shine">
+
+                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                                    <img src="./assets/product_images/black-pepper.jpg" width="350" height="450"
+                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
+                                        class="img-cover">
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="card-icon">
+                                        <img src="./assets/product_images/black-pepper.png" width="100" height="80"
+                                            loading="lazy" alt="icon">
+                                    </div>
+
+                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                        Black Pepper
+                                    </h3>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="event-card has-before hover:shine">
+
+                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                                    <img src="./assets/product_images/cinnamon.jpg" width="350" height="450"
+                                        loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
+                                        class="img-cover">
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="card-icon">
+                                        <img src="./assets/product_images/cinnamon.png" width="100" height="80"
+                                            loading="lazy" alt="icon">
+                                    </div>
+
+                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                        Cinnamon
+                                    </h3>
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
 
 
                     <img src="<?php echo $upload_dir['baseurl'] . '/product_images/shape-1.png'?>" width="246" height="412" loading="lazy" alt="shape"

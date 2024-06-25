@@ -951,44 +951,85 @@ animation-delay: 1.5s;
 animation-delay: 2s;
 }
 
-.main-content h2{
-    font-family: "Berkshire Swash", serif;
-    margin-top: 10px;
-    color: black;
-    padding: 15px;
-    text-align: left;
-}
-
-.main-content p {
-    color: black;
-    padding: 15px;
-    text-align: left;
-}
-
-table.specifications {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-table.specifications th, table.specifications td {
-    border: 1px solid #a3dd97;
-    padding: 10px;
-    text-align: left;
-    color: black;
-}
-
-table.specifications th {
-    background-color: #2c914e;
+.details-btn {
+    margin-left: 50px;
+    display: none;
+    padding: 5px 20px;
+    background-color: var(--gold-crayola);
     color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-table.specifications tr:nth-child(even) {
-    background-color: #f9f9f9;
+.event-card:hover .details-btn {
+    display: inline-block;
 }
 
-table.specifications tr:nth-child(odd) {
-    background-color: #e9f9e9;
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    color: black;
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.popup-image {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.popup-image img {
+    width: 100%;
+    height: auto;
+}
+
+.popup-text {
+    flex: 2;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: var(--gold-crayola);
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.enquiry-btn {
+    padding: 5px 20px;
+    background-color: var(--gold-crayola);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 20px 0;
+}
+
+.contact-info {
+    margin-top: 20px;
 }
 
 /*-----------------------------------*\
@@ -1196,6 +1237,49 @@ visibility: visible;
   flex-direction: column;
   row-gap: 50px;
 }
+
+.details-btn {
+  margin-left: 90px;
+}
+
+.popup{
+  background-color: #fff;
+  overflow: auto;
+}
+
+.popup-image img {
+    width: 54vh;
+    height: 40vh;
+}
+
+.popup-content {
+    color: black;
+    margin: 5% auto;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ .popup-image {
+                margin: 0 0 20px 25px;
+            }
+
+ .popup-text {
+                text-align: center;
+            }
+
+.close {
+                font-size: 30px;
+            }
+
+.enquiry-btn {
+                width: 100%;
+                margin: 10px 0;
+            }
 
 
 
@@ -1435,7 +1519,9 @@ iframe {
     width: 682px;
 }
 
-
+.details-btn {
+  margin-left: 92px;
+}
 
 /**
  * FOOTER
@@ -1544,6 +1630,9 @@ iframe {
   animation: move 5s linear infinite;
 }
 
+.details-btn {
+  margin-left: 30px;
+}
 /**
  * TESTIMONIALS
  */
@@ -1704,7 +1793,8 @@ iframe {
   margin-block-end: 75px;
 }
 
-
+.details-btn {
+  margin-left: 50px;
 
 /**
  * ABOUT
@@ -1851,130 +1941,224 @@ iframe {
 </style>
 
 <main>
-        <article?>
+        <article>
 
             <!-- 
         - #HERO
       -->
 
-<section class="hero text-center single-template" aria-label="home" id="home" style="max-height: 15vh;">
+            <section class="hero text-center" aria-label="home" id="home">
 
                 <ul class="hero-slider" data-hero-slider>
 
                     <li class="slider-item active" data-hero-slider-item>
 
                         <div class="slider-bg">
-                        <?php 
-                         echo get_the_post_thumbnail( get_the_ID(), 'full', array( 
-                        'alt' => '', 
-                        'class' => 'img-cover', 
-                        'width' => '1880', 
-                        'height' => '950' 
-                          ) ); 
-                        ?>
+                            <img src="<?php echo $upload_dir['baseurl'] . '/images/hr-slider-2.jpg'?>" width="1880" height="950" alt=""
+                                class="img-cover">
                         </div>
+
+                        <p class="label-2 section-subtitle slider-reveal">Unlocking Global Spice Treasures</p>
+
                         <h1 class="display-1 hero-title slider-reveal">
-                        <?php the_title(); ?>
+                            PULSES <br>
+
                         </h1>
 
+
+
+                        <a href="#" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">Explore Now</span>
+
+                            <span class="text text-2" aria-hidden="true">Explore Now</span>
+                        </a>
 
                     </li>
                 </ul>
             </section>
 
-            <section class="section-info text-center" aria-labelledby="contact-label" id="">
-    <div class="container">
-        <div class="main-content">
-            <h2>Overview of <?php the_title(); ?></h2>
-            <p><b><?php echo get_field('tagline'); ?></b></p>
-            <p><?php echo get_field('main_content'); ?></p>
-            <h4><b>NEW CROP: <?php echo get_field('new_corp'); ?></b><br>
-                <b>HSN CODE: <?php echo get_field('hsn_code'); ?></b>
-            </h4> 
-            <h2>Specifications:</h2>  
-            <table class="specifications">
-                <tr>
-                    <th>Properties</th>
-                    <th>Values & Limits</th>
-                </tr>
-                <tr>
-                    <td>Product Name</td>
-                    <td><?php echo get_field('product_name'); ?></td>
-                </tr>
-                <tr>
-                    <td>Counts Per Ounce</td>
-                    <td><?php echo get_field('count_per_ounce'); ?></td>
-                </tr>
-                <tr>
-                    <td>Moisture</td>
-                    <td><?php echo get_field('moisture'); ?></td>
-                </tr>
-                <tr>
-                    <td>Cleaning</td>
-                    <td><?php echo get_field('cleaning'); ?></td>
-                </tr>
-                <tr>
-                    <td>Oil Content</td>
-                    <td><?php echo get_field('oil_content'); ?></td>
-                </tr>
-                <tr>
-                    <td>Place of Origin</td>
-                    <td><?php echo get_field('place_of_origin'); ?></td>
-                </tr>
-                <tr>
-                    <td>Foreign Material</td>
-                    <td><?php echo get_field('foreign_material'); ?></td>
-                </tr>
-                <tr>
-                    <td>Aflatoxin</td>
-                    <td><?php echo get_field('aflatoxin'); ?></td>
-                </tr>
-                <tr>
-                    <td>Shape</td>
-                    <td><?php echo get_field('shape'); ?></td>
-                </tr>
-            </table>
-            <h2>Packaging details:</h2>  
-            <table class="specifications">
-                <tr>
-                    <th>TYPES OF BAGS</th>
-                    <th>QUANTITY</th>
-                </tr>
-                <tr>
-                    <td>Jute Bag</td>
-                    <td><?php echo get_field('jute_bag'); ?></td>
-                </tr>
-                <tr>
-                    <td> PP Bag</td>
-                    <td><?php echo get_field('pp_bag'); ?></td>
-                </tr>
-                <tr>
-                    <td> Vacuum Pack</td>
-                    <td><?php echo get_field('vacuum_pack'); ?></td>
-                </tr>
-            </table>
-            <h2>Container Capacity:</h2>
-            <table class="specifications">
-                <tr>
-                    <th>TYPE OF CONTAINER</th>
-                    <th>QUANTITY</th>
-                </tr>
-                <tr>
-                    <td> 20' FT Container </td>
-                    <td><?php echo get_field('20_ft_container'); ?></td>
-                </tr>
-                <tr>
-                    <td> 40' FT Container</td>
-                    <td><?php echo get_field('20_ft_container'); ?></td>
-                </tr>
-            </table>
-            <h2>Benefits and Uses:</h2>
-            <p><?php echo get_field('benefits_and_uses'); ?></p>
+            <!-- 
+        - #SPICES
+      -->
+
+            <section class="section event bg-black-10" aria-label="event">
+                <div class="container">
+
+                    <h2 class="section-subtitle label-2 text-center">NK Agro is India’s largest exporter of Chilli</h2>
+
+                    <p class="section-text text-center" style="color: black; margin: 30px;">We export over 25 varieties of chillies in all leading markets across the world. We have an extensive network to source them from all major chilli producing states of India which are Andhra Pradesh, Karnataka, Orissa, West Bengal, Maharashtra, Madhya Pradesh and Gujarat.</p>
+
+                        <ul class="grid-list">
+
+                        <li>
+                            <div class="event-card has-before hover:shine">
+
+                                <div class="card-banner img-holder" style="--width: 450; --height: 350;">
+                                    <img src="./assets/product_images/chillies.jpg" width="450" height="350"
+                                        loading="lazy" alt=""
+                                        class="img-cover">
+                                </div>
+
+                                <div class="card-content">
+                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                        S17 Teja Stem
+                                    </h3>
+                                    <button class="details-btn" onclick="showPopup()">Details</button>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="event-card has-before hover:shine">
+
+                                <div class="card-banner img-holder" style="--width: 450; --height: 350;">
+                                    <img src="./assets/product_images/chillies.jpg" width="450" height="350"
+                                        loading="lazy" alt=""
+                                        class="img-cover">
+                                </div>
+
+                                <div class="card-content">
+                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                        S17 Teja Stem
+                                    </h3>
+                                    <button class="details-btn" onclick="showPopup()">Details</button>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="event-card has-before hover:shine">
+
+                                <div class="card-banner img-holder" style="--width: 450; --height: 350;">
+                                    <img src="./assets/product_images/chillies.jpg" width="450" height="350"
+                                        loading="lazy" alt=""
+                                        class="img-cover">
+                                </div>
+
+                                <div class="card-content">
+                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                        S17 Teja Stem
+                                    </h3>
+                                    <button class="details-btn" onclick="showPopup()">Details</button>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="event-card has-before hover:shine">
+
+                                <div class="card-banner img-holder" style="--width: 450; --height: 350;">
+                                    <img src="./assets/product_images/chillies.jpg" width="450" height="350"
+                                        loading="lazy" alt=""
+                                        class="img-cover">
+                                </div>
+
+                                <div class="card-content">
+                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                        S17 Teja Stem
+                                    </h3>
+                                    <button class="details-btn" onclick="showPopup()">Details</button>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="event-card has-before hover:shine">
+
+                                <div class="card-banner img-holder" style="--width: 450; --height: 350;">
+                                    <img src="./assets/product_images/chillies.jpg" width="450" height="350"
+                                        loading="lazy" alt=""
+                                        class="img-cover">
+                                </div>
+
+                                <div class="card-content">
+                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                        S17 Teja Stem
+                                    </h3>
+                                    <button class="details-btn" onclick="showPopup()">Details</button>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="event-card has-before hover:shine">
+
+                                <div class="card-banner img-holder" style="--width: 450; --height: 350;">
+                                    <img src="./assets/product_images/chillies.jpg" width="450" height="350"
+                                        loading="lazy" alt=""
+                                        class="img-cover">
+                                </div>
+
+                                <div class="card-content">
+                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                        S17 Teja Stem
+                                    </h3>
+                                    <button class="details-btn" onclick="showPopup()">Details</button>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="event-card has-before hover:shine">
+
+                                <div class="card-banner img-holder" style="--width: 450; --height: 350;">
+                                    <img src="./assets/product_images/chillies.jpg" width="450" height="350"
+                                        loading="lazy" alt=""
+                                        class="img-cover">
+                                </div>
+
+                                <div class="card-content">
+                                    <h3 class="card-title title-2 text-center" style="margin: 20px;">
+                                        S17 Teja Stem
+                                    </h3>
+                                    <button class="details-btn" onclick="showPopup()">Details</button>
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+
+                    <img src="<?php echo $upload_dir['baseurl'] . '/product_images/shape-1.png'?>" width="246" height="412" loading="lazy" alt="shape"
+                        class="shape shape-1 move-anim">
+                    <img src="<?php echo $upload_dir['baseurl'] . '/product_images/shape-2.png'?>" width="343" height="345" loading="lazy" alt="shape"
+                        class="shape shape-2 move-anim">
+
+                </div>
+            </section>
+
+            <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="hidePopup()">&times;</span>
+            <div class="popup-image">
+                <img src="./assets/product_images/chillies.jpg" alt="Chillies">
+            </div>
+            <div class="popup-text">
+                <h2>S17 Teja with Stem</h2>
+                <h3>Product Specifications:</h3>
+                <p>Product Name: S17 Teja with Stem</p>
+                <p>Moisture: Less than 10%</p>
+                <p>Length: 6-9 cm (without stem)</p>
+                <p>Pungency: 85000 SHU - 100000 SHU</p>
+                <p>Color Value: 60 ASTA - 80 ASTA</p>
+                <p>Capsaicin content: 0.589%</p>
+                <p>The S17 Teja chilli is the most spiciest variety available in India. The red factor and the compelling taste in our food is enhanced by Teja S17. The major world cuisines like Chinese, American, Thai, Italian, Japanese and Indian use this quality to enrich the taste, colour and smell of the food. It is also used in the making of chilli powder and is rich in various vitamins and minerals.</p>
+                <button class="enquiry-btn">Submit an Enquiry</button>
+                <div class="contact-info">
+                    <p>For Sales Enquiries:</p>
+                    <p>&#x1F4DE; +91 96666 66122 | &#x1F4E7; info@nkexpo.com</p>
+                </div>
+            </div>
         </div>
     </div>
-</section>
+        </article>
+    </main>
 
-
-</article>
-</main>
 <?php get_footer(); ?>
