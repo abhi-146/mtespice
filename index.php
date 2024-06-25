@@ -164,7 +164,7 @@ get_header();
         <div class="grid-list-left">
           <p class="section-subtitle label-2">Flavors For Royalty</p>
 
-          <h2 class="headline-1 section-title" style="color: black">We Offer Premium Spices, Pulses, Nuts, Oil Seeds, and Vegetables</h2>
+          <h2 class="headline-1 section-title" style="color: black; width: 93%;" >We Offer Premium Spices, Pulses, Nuts, Oil Seeds, and Vegetables</h2>
 
           <p class="section-text" style="color: black">
             Discover the rich, aromatic, and flavorful world of spices, pulses, nuts, oil seeds, and vegetables. Our products come from the best farms and are carefully processed to bring you the highest quality and taste. We provide exceptional support to ensure your satisfaction with our premium offerings.
@@ -271,7 +271,7 @@ get_header();
       <!-- Parallax Section -->
       <section class="parallax">
         <div class="parallax-content">
-          <h1 style="font-size: 40px; font-family: 'Berkshire Swash', serif;">Global Exporters of Premium Quality Spices, Pulses, Nuts, Oil Seeds, and Vegetables</h1>
+          <h1 class="parallax-h1">Global Exporters of Premium Quality Spices, Pulses, Nuts, Oil Seeds, and Vegetables</h1>
         </div>
       </section>
 

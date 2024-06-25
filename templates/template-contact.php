@@ -1093,6 +1093,12 @@ input[type="submit"]{
   top: 45px;
 }
 
+.branch-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 
 @media (max-width: 768px) {
     .contact-container {
@@ -1103,6 +1109,12 @@ input[type="submit"]{
         flex-direction: column;
         align-items: center;
     }
+
+    .branch-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
     iframe {
   margin-top: 70px;
@@ -2034,14 +2046,14 @@ iframe {
     <div class="address-container">
         <div class="left-address">
             <h2>Corporate Head Office</h2>
-            <p>
+            <p style="padding: 18px;">
                 MTE Exim Pvt Ltd<br>
                 19, Armenian Street, 4th Floor, Suite No 513,<br>
                 Kolkata – 700001, India<br>
                 <span class="flag-number"><img src="<?php echo $upload_dir['baseurl'] . '/images/India.svg'?>" alt="Indian Flag" style="width: 20px;"> Mobile : +91 97487 25155 </span>
             </p>
             <p><strong>India Branch Office:</strong></p>
-            <ul>
+            <ul class="branch-list">
                 <li>Unjha (Gujarat)</li>
                 <li>Guntur (Andhra Pradesh)</li>
                 <li>Jaipur (Rajasthan)</li>

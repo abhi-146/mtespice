@@ -2220,8 +2220,8 @@ visibility: visible;
                         <li>
                             <div class="event-card has-before hover:shine">
 
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="./assets/product_images/chillies.jpg" width="350" height="450"
+                                <div class="card-banner img-holder" style="--width: 450; --height: 350;">
+                                    <img src="./assets/product_images/chillies.jpg" width="450" height="350"
                                         loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
                                         class="img-cover">
                                 </div>
@@ -2243,8 +2243,8 @@ visibility: visible;
                         <li>
                             <div class="event-card has-before hover:shine">
 
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="./assets/product_images/cumin seed.jpg" width="350" height="450"
+                                <div class="card-banner img-holder" style="--width: 450; --height: 350;">
+                                    <img src="./assets/product_images/cumin seed.jpg" width="450" height="350"
                                         loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
                                         class="img-cover">
                                 </div>
@@ -2266,8 +2266,8 @@ visibility: visible;
                         <li>
                             <div class="event-card has-before hover:shine">
 
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="./assets/product_images/fennel.jpg" width="350" height="450"
+                                <div class="card-banner img-holder" style="--width: 450; --height: 350;">
+                                    <img src="./assets/product_images/fennel.jpg" width="450" height="350"
                                         loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
                                         class="img-cover">
                                 </div>
@@ -2289,8 +2289,8 @@ visibility: visible;
                         <li>
                             <div class="event-card has-before hover:shine">
 
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="./assets/product_images/turmeric.jpg" width="350" height="450"
+                                <div class="card-banner img-holder" style="--width: 450; --height: 350;">
+                                    <img src="./assets/product_images/turmeric.jpg" width="450" height="350"
                                         loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
                                         class="img-cover">
                                 </div>
@@ -2312,8 +2312,8 @@ visibility: visible;
                         <li>
                             <div class="event-card has-before hover:shine">
 
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="./assets/product_images/ajwain.jpg" width="350" height="450"
+                                <div class="card-banner img-holder" style="--width: 450; --height: 350;">
+                                    <img src="./assets/product_images/ajwain.jpg" width="450" height="350"
                                         loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
                                         class="img-cover">
                                 </div>
@@ -2335,8 +2335,8 @@ visibility: visible;
                         <li>
                             <div class="event-card has-before hover:shine">
 
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="./assets/product_images/fenugreek.jpg" width="350" height="450"
+                                <div class="card-banner img-holder" style="--width: 450; --height: 350;">
+                                    <img src="./assets/product_images/fenugreek.jpg" width="450" height="350"
                                         loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
                                         class="img-cover">
                                 </div>
@@ -2358,8 +2358,8 @@ visibility: visible;
                         <li>
                             <div class="event-card has-before hover:shine">
 
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="./assets/product_images/dill_seed.jpg" width="350" height="450"
+                                <div class="card-banner img-holder" style="--width: 450; --height: 350;">
+                                    <img src="./assets/product_images/dill_seed.jpg" width="450" height="350"
                                         loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
                                         class="img-cover">
                                 </div>
@@ -2381,8 +2381,8 @@ visibility: visible;
                         <li>
                             <div class="event-card has-before hover:shine">
 
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="./assets/product_images/cardamom.jpg" width="350" height="450"
+                                <div class="card-banner img-holder" style="--width: 450; --height: 350;">
+                                    <img src="./assets/product_images/cardamom.jpg" width="450" height="350"
                                         loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
                                         class="img-cover">
                                 </div>
@@ -2404,8 +2404,8 @@ visibility: visible;
                         <li>
                             <div class="event-card has-before hover:shine">
 
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="./assets/product_images/garlic.jpg" width="350" height="450"
+                                <div class="card-banner img-holder" style="--width: 450; --height: 350;">
+                                    <img src="./assets/product_images/garlic.jpg" width="450" height="350"
                                         loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
                                         class="img-cover">
                                 </div>
@@ -2427,8 +2427,8 @@ visibility: visible;
                         <li>
                             <div class="event-card has-before hover:shine">
 
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="./assets/product_images/nutmeg.jpg" width="350" height="450"
+                                <div class="card-banner img-holder" style="--width: 450; --height: 350;">
+                                    <img src="./assets/product_images/nutmeg.jpg" width="450" height="350"
                                         loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
                                         class="img-cover">
                                 </div>
@@ -2450,8 +2450,8 @@ visibility: visible;
                         <li>
                             <div class="event-card has-before hover:shine">
 
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="./assets/product_images/black-pepper.jpg" width="350" height="450"
+                                <div class="card-banner img-holder" style="--width: 450; --height: 350;">
+                                    <img src="./assets/product_images/black-pepper.jpg" width="450" height="350"
                                         loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
                                         class="img-cover">
                                 </div>
@@ -2473,8 +2473,8 @@ visibility: visible;
                         <li>
                             <div class="event-card has-before hover:shine">
 
-                                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                                    <img src="./assets/product_images/cinnamon.jpg" width="350" height="450"
+                                <div class="card-banner img-holder" style="--width: 450; --height: 350;">
+                                    <img src="./assets/product_images/cinnamon.jpg" width="450" height="350"
                                         loading="lazy" alt="Flavour so good you’ll try to eat with your eyes."
                                         class="img-cover">
                                 </div>

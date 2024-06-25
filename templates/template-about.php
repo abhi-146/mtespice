@@ -1099,6 +1099,13 @@ body.nav-active {
     color: black;
 }
 
+.founder-text{
+    text-align: left;
+}
+
+.founder-story{
+    text-align: center;
+}
   /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
@@ -1300,6 +1307,10 @@ body.nav-active {
     z-index: -9999;
     }
 
+    .founder-text{
+    text-align: center;
+}
+
     .vision-content h1{
         color: black;;
         font-family: var(--fontFamily-forum);
@@ -1366,11 +1377,6 @@ body.nav-active {
     /**
      * REUSED STYLE
      */
-
-    :is(.service, .about) .section-text {
-        max-width: 533px;
-        margin-inline: auto;
-    }
 
     .contact-number {
         --fontSize-body-1: 3rem;
@@ -2080,51 +2086,22 @@ body.nav-active {
 -->
 
 <section class="section about text-center" aria-labelledby="about-label" id="about">
-    <div class="container">
-
-        <div class="about-content">
-
-        <p class="label-2 section-subtitle" id="about-label">Our Story</p>
-
-            <p class="section-text">
-            Founded in 2005, our company has rapidly grown into a $60 million enterprise, solidifying its position as one of India's foremost exporters. Our dedication to excellence and innovation has earned us the prestigious 3-star export house ranking certificate from the Government of India. This accolade highlights our commitment to maintaining high standards and delivering exceptional products to global markets.
-<br>
-<strong>The Journey of Quality Excellence:</strong>
-<br>
-
-Our journey began with humble origins and a relentless focus on quality. In our early years, we faced challenges in ensuring consistent product quality that met international standards. Recognizing the pivotal role of quality in our success, we embarked on a transformative journey.
-<br>
-
-Driven by our leadership team, led by Mr. Suman Jaiswal and Mrs. Jayeeti Jaiswal, we instituted rigorous quality control measures across our operations. This included enhancing our sourcing processes, upgrading our manufacturing facilities, and investing in training programs for our workforce.
-<br>
-
-Mr. Manish Joshi, our esteemed Export Head, played a pivotal role in this transformation. With his wealth of experience and deep product knowledge, he spearheaded initiatives to streamline our production processes and implement stringent quality checks. His leadership ensured that every product bearing our name met the highest standards of quality and reliability.
-<br>
-
-Today, our company stands as a testament to the power of perseverance and commitment to quality. Our products are trusted by customers worldwide, reflecting our unwavering dedication to excellence. As we continue to grow, innovation remains at the heart of our operations, driving us to explore new horizons and exceed customer expectations.
-
-   
-        </p>
-
-
-
-        </div>
-
-        <figure class="about-banner">
-
-            <img src="<?php echo $upload_dir['baseurl'] . '/images/large-about.jpg'?>" width="570" height="570" loading="lazy"
-                alt="about banner" class="w-100" data-parallax-item data-parallax-speed="1">
-
-
-        </figure>
-
+            <div class="founder-text">
+                <p class="label-2 section-subtitle founder-story" id="about-label">Our Story</p>
+                <p class="section-text founder-text">
+                    Founded in 2005, our company has rapidly grown into a $60 million enterprise, solidifying its position as one of India's foremost exporters. Our dedication to excellence and innovation has earned us the prestigious 3-star export house ranking certificate from the Government of India. This accolade highlights our commitment to maintaining high standards and delivering exceptional products to global markets.
+                    <br>
+                    <br>
+                    <strong>The Journey of Quality Excellence:</strong>
+                    <br>
+                    Our journey began with humble origins and a relentless focus on quality. In our early years, we faced challenges in ensuring consistent product quality that met international standards. Recognizing the pivotal role of quality in our success, we embarked on a transformative journey.
+                    Driven by our leadership team, led by Mr. Suman Jaiswal and Mrs. Jayeeti Jaiswal, we instituted rigorous quality control measures across our operations. This included enhancing our sourcing processes, upgrading our manufacturing facilities, and investing in training programs for our workforce. 
+                    Mr. Manish Joshi, our esteemed Export Head, played a pivotal role in this transformation. With his wealth of experience and deep product knowledge, he spearheaded initiatives to streamline our production processes and implement stringent quality checks. His leadership ensured that every product bearing our name met the highest standards of quality and reliability.
+                    Today, our company stands as a testament to the power of perseverance and commitment to quality. Our products are trusted by customers worldwide, reflecting our unwavering dedication to excellence. As we continue to grow, innovation remains at the heart of our operations, driving us to explore new horizons and exceed customer expectations.
+                </p>
+            </div>
+        
         <img src="<?php echo $upload_dir['baseurl'] . '/images/shape-3.png'?>" width="197" height="194" loading="lazy" alt="" class="shape">
-
-
-
-
-
-    </div>
 </section>
 
 <!-- Parallax Section -->

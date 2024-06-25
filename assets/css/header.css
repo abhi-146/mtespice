@@ -797,6 +797,12 @@
     opacity: 1;
     pointer-events: all;
   }
+
+  .parallax-h1{
+    line-height: 60px;
+    font-size: 40px;
+    font-family: 'Berkshire Swash', serif;
+  }
   
   
   
@@ -862,7 +868,9 @@
     position: relative;
   }
 
-
+  .parallax-h1{
+    font-size: 20px;
+  }
     
   }
   
@@ -893,7 +901,7 @@
      */
   
     :is(.service, .about) .section-text {
-      max-width: 420px;
+      max-width: 760px;
       margin-inline: auto;
     }
   
